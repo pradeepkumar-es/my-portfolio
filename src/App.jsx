@@ -10,6 +10,7 @@ function App() {
   return (
     <>
       <Home/>
+      {alert("Website is under consturction")}
     </>
   )
 }
