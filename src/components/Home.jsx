@@ -15,7 +15,7 @@ export default function Home () {
                 <h3>Web Developer</h3>
                 <h1>Elevating Brands Through Innovative Web Solutions</h1>
                 <p>My Mission is to create Engaging, Fast, and Loving Websites for Clients and User </p>
-                <div className="message-me">Chat Me on Linkein</div>
+                <div className="message-me">Chat Me on Linkein, Insta</div>
             </div>
             <div className="profile">
                 <img className="pradeep-profile" src={pradeepProfile} alt="Profile of Pradeep" />
