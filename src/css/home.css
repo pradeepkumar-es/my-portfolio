@@ -1,0 +1,31 @@
+.introduction{
+    display: flex;
+    margin: 2rem 8rem;
+    
+}
+.introduction .profile .pradeep-profile{
+    max-width:22rem;
+}
+.introduction h3{
+    color: yellow;
+    font-size:larger;
+}
+.introduction h1{
+    padding-bottom: 2rem;
+    color: white;
+}
+.introduction p{
+    font-size: large;
+    color: white;
+}
+div .message-me{
+    padding: 10px;
+
+    border: 1px solid ;
+}
+@media only screen and (max-width:600px){
+    .introduction .profile .pradeep-profile img{
+        border: solid blue;
+        border-radius: 1px;
+    }
+}
