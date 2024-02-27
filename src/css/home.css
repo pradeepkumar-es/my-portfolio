@@ -23,15 +23,19 @@
     color: white;
     padding-bottom: 1em;
 }
-div .message-me{
+   .message-me{
     display: flex;
     justify-content: center;
+    align-items: center;
     border: 1px solid white;
-    max-width: 20rem;
-    padding-top: 2px;
+    max-width: 25rem;
+    /* padding-top: 2px; */
 }
 .message-me p{
     font-size:x-large;
+    /* vertical-align: bottom; */
+    padding-top: 1.5rem;
+    cursor: default;
     
 }
 .about .social-icons{
@@ -39,9 +43,15 @@ div .message-me{
     flex-direction: row;
     justify-items: center;
 }
-.about .social-icons img{
-    max-width: 2.3rem;
-    max-height: 2.3rem;
+.about .social-icons .arrow, .linkedin, .web, .email{
+    color: rgb(255, 255, 255);
+    width: 2.5rem;
+    height: 2.5rem;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+.home .message-me .linkedin:hover, .home .web:hover, .home .email:hover{
+    transform: scale(1.5);
 }
 @media only screen and (max-width:768px){
     .introduction{
