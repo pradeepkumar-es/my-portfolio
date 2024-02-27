@@ -5,6 +5,8 @@
 }
 .introduction .profile .pradeep-profile{
     max-width:22rem;
+    border-bottom: double 10px white;
+    border-right: double 10px white;
 }
 .introduction h3{
     color: yellow;
@@ -23,9 +25,13 @@ div .message-me{
 
     border: 1px solid ;
 }
-@media only screen and (max-width:600px){
-    .introduction .profile .pradeep-profile img{
-        border: solid blue;
-        border-radius: 1px;
+@media only screen and (max-width:768px){
+    .introduction{
+        display: flex;
+        flex-direction: column-reverse;
+
+    }
+    .introduction .about h3{
+        text-align: center;
     }
 }
