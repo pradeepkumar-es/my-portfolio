@@ -11,19 +11,37 @@
 .introduction h3{
     color: yellow;
     font-size:larger;
+    margin-bottom: 2rem;
 }
 .introduction h1{
     padding-bottom: 2rem;
-    color: white;
+    color:white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 .introduction p{
     font-size: large;
     color: white;
+    padding-bottom: 1em;
 }
 div .message-me{
-    padding: 10px;
-
-    border: 1px solid ;
+    display: flex;
+    justify-content: center;
+    border: 1px solid white;
+    max-width: 20rem;
+    padding-top: 2px;
+}
+.message-me p{
+    font-size:x-large;
+    
+}
+.about .social-icons{
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+}
+.about .social-icons img{
+    max-width: 2.3rem;
+    max-height: 2.3rem;
 }
 @media only screen and (max-width:768px){
     .introduction{
