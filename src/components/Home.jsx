@@ -1,5 +1,5 @@
 import React from "react";
-import Navabar from "./Navabar";
+import Navbar from "./Navbar";
 import AboutMe from './AboutMe'
 import Projects from "./Projects";
 import MyJourney from "./MyJourney";
@@ -16,7 +16,7 @@ import { IoIosArrowRoundForward } from "react-icons/io";
 export default function Home() {
     return (
         <>
-            <Navabar />
+            <Navbar />
             <div className="home">
             <div className="introduction">
                 <div className="about">
@@ -44,7 +44,7 @@ export default function Home() {
             <Projects />
             <MyJourney />
             <Contact />
-            <Navabar />
+            <Navbar />
         </div>
         </>
     )
