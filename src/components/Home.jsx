@@ -30,7 +30,7 @@ export default function Home() {
                             {/* <img className="linkedin" src={linkedinIcon} alt="contact through linkedin" /> */}
                             {/* <img className="email" src={mailIcon} alt="contact through Email" /> */}
                             <IoIosArrowRoundForward className="arrow"/>
-                            <a href="mailto:pradeepkumariitk22@gmail.com"><IoMdMail className="email"/></a>
+                            <a href="mailto:pradeepkumariitk22@gmail.com?subject=Contact For &body=Hi Pradeep,%20I"><IoMdMail className="email"/></a>
                             <a href="https://www.linkedin.com/in/pradeepkumar-es/"><FaLinkedin className="linkedin" /></a>
                             <a href="#"><FaGlobe className="web"/></a>
                         </div>
