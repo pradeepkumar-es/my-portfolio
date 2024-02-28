@@ -4,6 +4,7 @@ import AboutMe from './AboutMe'
 import Projects from "./Projects";
 import MyJourney from "./MyJourney";
 import Contact from "./Contact";
+import Footer from "./Footer";
 import pradeepProfile from "../images/pradeep-pic-nobg.png"
 import webIcon from "../images/web-icon.png"
 import linkedinIcon from "../images/linkedin-icon.png"
@@ -44,7 +45,7 @@ export default function Home() {
             <Projects />
             <MyJourney />
             <Contact />
-            <Navbar />
+            <Footer />
         </div>
         </>
     )
