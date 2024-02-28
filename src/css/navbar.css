@@ -12,6 +12,9 @@
     gap: 1rem;
     color: white;
 }
+.nav .social-link a{
+    color: white;
+}
 .nav .logo{
     color: rgb(224, 244, 247);
     font-family: Georgia, 'Times New Roman', Times, serif;

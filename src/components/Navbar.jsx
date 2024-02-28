@@ -17,9 +17,9 @@ export default function Navabar () {
             </div>
             <div className="social-link">
                 <ul>
-                    <li><FaInstagram/></li>
-                    <li><FaLinkedin/></li>
-                    <li><FaFacebook/></li>
+                    <li><a href="https://www.instagram.com/pradeepkumar.es/"><FaInstagram/></a></li>
+                    <li><a href="https://www.linkedin.com/in/pradeepkumar-es/"><FaLinkedin/></a></li>
+                    <li><a href="https://www.facebook.com/pradeepkumar.es/"><FaFacebook/></a></li>
                 </ul>
             </div>
             <div className="mobile-menu-link">

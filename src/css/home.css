@@ -29,7 +29,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid white;
+    /* border: 1px solid white; */
     max-width: 25rem;
     /* padding-top: 2px; */
 }
@@ -38,6 +38,7 @@
     /* vertical-align: bottom; */
     padding-top: 1.5rem;
     cursor: default;
+    font-weight: bolder;
     
 }
 .about .social-icons{
@@ -51,6 +52,9 @@
     height: 2.5rem;
     cursor: pointer;
     transition: transform 0.2s;
+}
+.about .social-icons .arrow{
+    padding-top: 5px;
 }
 .home .message-me .linkedin:hover, .home .web:hover, .home .email:hover{
     transform: scale(1.5);
