@@ -49,27 +49,18 @@
   .nav .mobile-menu .deactivate-hamburgerMenu {
     display: none;
   }
-  /* .nav .mobile-menu .mobileMenuStyle li, */
   .nav .mobile-menu .cross
-  /* .nav .mobile-menu .showMenuPart  */
   {
-    background-color: rgb(255, 255, 255);
-    /* color: rgb(0, 0, 0); */
-    /* list-style: none; */
-    /* align-content: start; */
-    /* margin-bottom: 0px; */
-    /* padding-left: 5rem; */
+    /* background-color: rgb(255, 255, 255); */
     text-align:center;
     margin: 0px;
     padding:0px 0px;
-    /* height: 3.5rem; */
-    /* vertical-align: middle; */
-
+    /* border: 1px solid black; */
     
   }
   .nav .mobile-menu .crossStyle{
-    background-color: white;
-    color: black;
+    /* background-color: white; */
+    /* color: black; */
     padding: 0px;
     margin: 0px;
     /* height: 3.4rem; */
