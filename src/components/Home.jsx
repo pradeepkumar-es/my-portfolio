@@ -38,10 +38,9 @@ export default function Home() {
                     <img className="pradeep-profile" src={pradeepProfile} alt="Profile of Pradeep" />
                 </div>
             </div>
-            <AboutMe />
-            <Projects />
-            <Contact />
-            <Footer />
+            <div className="experience">
+                
+            </div>
         </div>
         </>
     )
