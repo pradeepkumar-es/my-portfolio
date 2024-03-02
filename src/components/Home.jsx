@@ -1,8 +1,6 @@
 import React from "react";
-import Navbar from "./Navbar";
 import AboutMe from './AboutMe'
 import Projects from "./Projects";
-import MyJourney from "./MyJourney";
 import Contact from "./Contact";
 import Footer from "./Footer";
 import pradeepProfile from "../images/pradeep-pic-nobg.png"
@@ -17,7 +15,6 @@ import { IoIosArrowRoundForward } from "react-icons/io";
 export default function Home() {
     return (
         <>
-            <Navbar />
             <div className="home">
             <div className="introduction">
                 <div className="about">
@@ -43,7 +40,6 @@ export default function Home() {
             </div>
             <AboutMe />
             <Projects />
-            <MyJourney />
             <Contact />
             <Footer />
         </div>

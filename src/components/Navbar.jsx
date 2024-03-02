@@ -3,6 +3,7 @@ import { FaInstagram, FaLinkedin, FaFacebook } from "react-icons/fa";
 import { GiHamburgerMenu } from "react-icons/gi"
 import { RxCross1 } from "react-icons/rx"
 import "../css/navbar.css"
+import { Link } from 'react-router-dom';
 export default function Navabar() {
     const [openMenu, setOpenMenu] = useState(true);
     function togglemenu() {
@@ -14,10 +15,10 @@ export default function Navabar() {
                 <div className="logo"><h2><span>P</span>RADEEP <span>K</span>UMAR</h2></div>
                 <div className="menu-link">
                     <ul>
-                        <li>About Me</li>
-                        <li>My Journey</li>
-                        <li>My Projects</li>
-                        <li>Contact Me</li>
+                        <li> <Link className='home' to="/">Home</Link> </li>
+                        <li> <Link to="/aboutme">About Me</Link> </li>
+                        <li><Link to="/projects">My Projects</Link></li>
+                        <li><Link to="/contact">Contact Me</Link></li>
                     </ul>
                 </div>
                 <div className="social-link">
@@ -30,13 +31,13 @@ export default function Navabar() {
                 <div className="mobile-menu">
                     <GiHamburgerMenu onClick={togglemenu} className={openMenu ? '' : 'deactivate-hamburgerMenu'} />
                     <div className="showMenuPart">
-                    <div className="cross"><RxCross1 onClick={togglemenu} className={openMenu ? 'activate-cross' : 'crossStyle'} /></div>
-                    <ul className={openMenu ? 'activate-mobileNavbar' : 'mobileMenuStyle'}>
-                        <li>About Me</li>
-                        <li>My Journey</li>
-                        <li>My Projects</li>
-                        <li>Contact Me</li>
-                    </ul>
+                        <div className="cross"><RxCross1 onClick={togglemenu} className={openMenu ? 'activate-cross' : 'crossStyle'} /></div>
+                        <ul className={openMenu ? 'activate-mobileNavbar' : 'mobileMenuStyle'}>
+                            <li> <Link to="/">Home</Link> </li>
+                            <li><Link to="/aboutme">About Me</Link></li>
+                            <li><Link to="/projects">My Projects</Link></li>
+                            <li><Link to="/contact">Contact Me</Link></li>
+                        </ul>
                     </div>
                 </div>
             </div>

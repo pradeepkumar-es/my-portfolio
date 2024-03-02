@@ -13,6 +13,9 @@
   gap: 1rem;
   color: white;
 }
+/* .nav .menu-link .home{
+  color: white;
+} */
 .nav .social-link a {
   color: white;
 }
@@ -80,6 +83,9 @@
     border-width: 0px;
     list-style: none;
   }
+  /* .nav .menu-link .home{
+    color: white;
+  } */
 }
 @media only screen and (min-width: 768px) {
 }
