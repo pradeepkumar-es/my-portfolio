@@ -30,13 +30,13 @@ export default function Navabar() {
                 </div>
                 <div className="mobile-menu">
                     <GiHamburgerMenu onClick={togglemenu} className={openMenu ? '' : 'deactivate-hamburgerMenu'} />
-                    <div className="showMenuPart">
+                    <div className={openMenu?"none":"showMenuPart"}>
                         <div className="cross"><RxCross1 onClick={togglemenu} className={openMenu ? 'activate-cross' : 'crossStyle'} /></div>
                         <ul className={openMenu ? 'activate-mobileNavbar' : 'mobileMenuStyle'}>
-                            <li> <Link to="/">Home</Link> </li>
-                            <li><Link to="/aboutme">About Me</Link></li>
-                            <li><Link to="/projects">My Projects</Link></li>
-                            <li><Link to="/contact">Contact Me</Link></li>
+                             <Link to="/"><li onClick={togglemenu} className={openMenu?"hideMenuPart":"none"} >Home</li></Link>                     
+                             <Link to="/aboutme"><li onClick={togglemenu} className={openMenu?"hideMenuPart":"none"} >About Me</li></Link>
+                            <Link to="/projects"><li onClick={togglemenu} className={openMenu?"hideMenuPart":"none"}>My Projects</li></Link>
+                            <Link to="/contact"><li onClick={togglemenu} className={openMenu?"hideMenuPart":"none"}>Contact Me</li></Link>
                         </ul>
                     </div>
                 </div>

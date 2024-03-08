@@ -63,10 +63,14 @@
     .introduction{
         display: flex;
         flex-direction: column-reverse;
-        margin: 2px 0rem;
+        margin: 2rem 1rem;
+        /* margin: auto; */
+        justify-content: center;
+        align-items: center;
+
 
     }
-    /* .introduction .about h3{
+    .introduction .about h3{
         text-align: center;
-    } */
+    }
 }

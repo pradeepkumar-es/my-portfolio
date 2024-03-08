@@ -2,6 +2,11 @@
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  position: sticky;
+  top: 0px;
+  /* padding-top: 10px; */
+  /* padding-bottom: 0px; */
+  /* padding:0px 0px 0px 0px; */
 }
 .nav .menu-link ul,
 .social-link ul {
@@ -12,6 +17,8 @@
   justify-content: space-evenly;
   gap: 1rem;
   color: white;
+  padding-top: 10px;
+  font-size: larger;
 }
 /* .nav .menu-link .home{
   color: white;
@@ -19,7 +26,12 @@
 .nav .social-link a {
   color: white;
 }
+.nav .menu-link a{
+  text-decoration: none;
+  color: aliceblue;
+}
 .nav .logo {
+  padding-top: 10px;
   color: rgb(224, 244, 247);
   font-family: Georgia, "Times New Roman", Times, serif;
 }
@@ -52,37 +64,74 @@
   .nav .mobile-menu .deactivate-hamburgerMenu {
     display: none;
   }
-  .nav .mobile-menu .cross
-  {
+  .nav .mobile-menu .cross {
     /* background-color: rgb(255, 255, 255); */
-    text-align:center;
-    margin: 0px;
-    padding:0px 0px;
+    /* text-align:right; */
+    /* align-items: end; */
+    /* margin: 0px; */
+    /* padding:0px 0px 0px 16px; */
     /* border: 1px solid black; */
-    
   }
-  .nav .mobile-menu .crossStyle{
-    /* background-color: white; */
-    /* color: black; */
-    padding: 0px;
-    margin: 0px;
-    /* height: 3.4rem; */
+  .nav .mobile-menu .crossStyle {
+    background-color: white;
+    color: black;
+    padding-top: 5px ;
+    padding-bottom: 3px;
+    margin-top: 0px;
+    /* margin-bottom: 5px; */
+    /* margin-bottom: 10rem; */
+    position: fixed;
+    top: -1px;
+    right: 3px;
+    width: 227px;
+    /* height: 100%; */
+    transition: left 0.5s ease;
   }
-  .nav .mobile-menu .mobileMenuStyle{
-    margin: 0px;
-    padding-top: 0px;
+  .nav .mobile-menu .mobileMenuStyle {
+    margin-top: 2rem;
+    background-color: white;
+    padding-top: 1rem;
+    /* position: fixed;
+    top: 1;
+    right: -25%;
+    width: 90%;
+    height: 100%;
+    transition: left 0.5s ease; */
   }
-  .nav .mobile-menu .mobileMenuStyle li{
-    font-size:1.8rem;
-    padding: 0.8rem 2.7rem ;
+  .nav .mobile-menu .mobileMenuStyle li {
+    font-size: 1.5rem;
+    padding: 0.8rem 2rem 0rem 0rem;
     background-color: rgb(252, 254, 255);
     color: rgb(0, 0, 0);
-    width: 10rem;
+    width: 15rem;
     text-align: center;
-    font-family:'Times New Roman', Times, serif;
-    border-width: 0px;
+    font-family: "Times New Roman", Times, serif;
+    /* border-width: 0px; */
     list-style: none;
   }
+  .nav .showMenuPart{
+    /* margin-top: 2rem; */
+    background-color: white;
+    position: fixed;
+    top: 1;
+    right: -25%;
+    width: 90%;
+    height: 100%;
+    transition: left 0.5s ease;
+  }
+  .nav .hideMenuPart{
+    display: none;
+  }
+  /* For Link use a for styling because here Link is used instead of a */
+  .mobileMenuStyle a {
+    background-color: white;
+    text-decoration: none;
+    /* text-align: center; */
+    /* padding: 0px; */
+  }
+  /* link{
+    background-color: white;
+  } */
   /* .nav .menu-link .home{
     color: white;
   } */
