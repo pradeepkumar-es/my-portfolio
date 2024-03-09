@@ -4,17 +4,24 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    /* position: inherit; */
+    /* z-index: 1; */
 }
 .introduction{
     display: flex;
     margin: 2rem 8rem;
+
     
 }
 .introduction .profile .pradeep-profile{
     max-width:22rem;
-    filter: drop-shadow(20px 5px 5px  var(--text-color));
-    /* border-bottom: double 10px var(--text-color); */
-    /* border-right: double 10px var(--text-color); */
+    /* position: relative; */
+    /* top: 44px; */
+    /* z-index: 0; */
+    box-shadow: 15px 5px 5px var(--text-color);
+    /* filter: drop-shadow(20px 5px 5px  var(--text-color)); */
+    border-bottom: double 10px var(--text-color);
+    border-right: double 10px var(--text-color);
 }
 .introduction h3{
     color:var(--sub-heading-color);
