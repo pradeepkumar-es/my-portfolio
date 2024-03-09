@@ -1,3 +1,10 @@
+.home{
+    position: inherit;
+    top: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .introduction{
     display: flex;
     margin: 2rem 8rem;
@@ -5,8 +12,8 @@
 }
 .introduction .profile .pradeep-profile{
     max-width:22rem;
-    border-bottom: double 10px white;
-    border-right: double 10px white;
+    border-bottom: double 10px var(--text-color);
+    border-right: double 10px var(--text-color);
 }
 .introduction h3{
     color: yellow;
@@ -16,12 +23,12 @@
 }
 .introduction h1{
     padding-bottom: 2rem;
-    color:white;
+    /* color:white; */
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 .introduction p{
     font-size: large;
-    color: white;
+    /* color: white; */
     padding-bottom: 1em;
     font-family:sans-serif;
 }
@@ -47,7 +54,7 @@
     justify-items: center;
 }
 .about .social-icons .arrow, .linkedin, .web, .email{
-    color: rgb(255, 255, 255);
+    color: var(--icon-color);
     width: 2.5rem;
     height: 2.5rem;
     cursor: pointer;

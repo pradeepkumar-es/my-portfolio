@@ -1,8 +1,21 @@
+/* :root{
+  --background-color:white;
+  --text-color:black;
+}
+.mode{
+  --background-color: var(--text-color);
+  --text-color:var(--background-color);
+}
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+} */
 .nav {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   position: sticky;
+  /* margin: auto; */
   top: 0px;
   /* padding-top: 10px; */
   /* padding-bottom: 0px; */
@@ -16,7 +29,7 @@
   cursor: pointer;
   justify-content: space-evenly;
   gap: 1rem;
-  color: white;
+  color:var(--icon-color);
   padding-top: 10px;
   font-size: larger;
 }
@@ -24,21 +37,32 @@
   color: white;
 } */
 .nav .social-link a {
-  color: white;
+  color: var(--icon-color);
 }
+.nav .lightMode, .nav .darkMode{
+  color:var(--icon-color);
+  height: 35px;
+  width: 35px;
+  padding-top: 5px;
+  cursor: pointer;
+}
+/* .lightMode, .darkMode{
+  color: white;
+} */
 .nav .menu-link a{
   text-decoration: none;
-  color: aliceblue;
+  color: var(--icon-color);
 }
 .nav .logo {
-  padding-top: 10px;
+  padding-top: 1px;
   color: rgb(224, 244, 247);
   font-family: Georgia, "Times New Roman", Times, serif;
 }
 .nav .logo h2 span {
   font-size: 150%;
   margin-right: 0px;
-  color: white;
+  color: var(--text-color);
+  /* padding-bottom: 5px; */
 }
 .nav .mobile-menu {
   display: none;
@@ -63,6 +87,10 @@
   }
   .nav .mobile-menu .deactivate-hamburgerMenu {
     display: none;
+    /* color: var(--icon-color); */
+  }
+  .nav .mobile-menu .hamburgerMenu {
+    color: var(--icon-color);
   }
   .nav .mobile-menu .cross {
     /* background-color: rgb(255, 255, 255); */

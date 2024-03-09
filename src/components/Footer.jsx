@@ -1,7 +1,10 @@
+import '../css/footer.css'
 export default function Footer(){
     return(
         <>
-        Footer
+        <div className="footer">
+            <p>Footer</p>
+        </div>
         </>
     )
 }
