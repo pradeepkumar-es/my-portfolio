@@ -12,8 +12,9 @@
 }
 .introduction .profile .pradeep-profile{
     max-width:22rem;
-    border-bottom: double 10px var(--text-color);
-    border-right: double 10px var(--text-color);
+    filter: drop-shadow(25px 5px 5px  var(--text-color));
+    /* border-bottom: double 10px var(--text-color); */
+    /* border-right: double 10px var(--text-color); */
 }
 .introduction h3{
     color:var(--sub-heading-color);
