@@ -9,12 +9,14 @@
     --main-h1-color:black;
     --text-color:black;
     --icon-color:black;
+    --sub-heading-color:rgb(133, 38, 10);
 }
 .dark-Mode{
     --bg-color:#070122;
     --main-h1-color:white;
     --text-color:white;
     --icon-color:white;
+    --sub-heading-color:yellow;
 }
 h1,p,h2{
     color: var(--main-h1-color);

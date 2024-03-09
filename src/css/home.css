@@ -16,7 +16,7 @@
     border-right: double 10px var(--text-color);
 }
 .introduction h3{
-    color: yellow;
+    color:var(--sub-heading-color);
     font-size:larger;
     margin-bottom: 2rem;
     font-family:Georgia, 'Times New Roman', Times, serif;
