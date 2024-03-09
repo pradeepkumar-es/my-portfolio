@@ -9,13 +9,13 @@ import { Link } from 'react-router-dom';
 export default function Navabar() {
     const [openMenu, setOpenMenu] = useState(true);
     const [mode, setMode] =useState(true);
-    const[style,setStyle] =useState("light-Mode")
+    const[style,setStyle] =useState("dark-Mode")
     function togglemenu() {
         setOpenMenu(!openMenu);
     }
     function changeMode () {
         setMode(!mode);
-        {mode?setStyle("dark-Mode"):setStyle("light-Mode")}
+        {mode?setStyle("light-Mode"):setStyle("dark-Mode")}
     }
     useEffect(()=>{
      document.body.className=style;
@@ -34,7 +34,7 @@ export default function Navabar() {
                     </ul>
                 </div>
                 <div className="mode" onClick={changeMode}>
-                    {mode?<MdOutlineDarkMode className='lightMode' />:<MdOutlineLightMode className='darkMode' />}
+                    {mode?<MdOutlineLightMode className='lightMode' />:<MdOutlineDarkMode className='darkMode' />}
                 </div>
                 <div className="social-link">
                     <ul>
