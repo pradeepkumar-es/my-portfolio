@@ -16,12 +16,12 @@
 .home .about {
     margin-top: 4rem;
 }
-.home .about .shdash{
+/* .home .about .shdash{
     row-gap: 2rem;
     height: 1px;
     width: 20rem;
     background-color: var(--sub-heading-color);
-}
+} */
 .introduction .profile .pradeep-profile{
     max-width:22rem;
     /* position: relative; */
@@ -103,14 +103,18 @@
     .introduction{
         display: flex;
         flex-direction: column-reverse;
-        margin: 2rem 1rem;
+        margin: 2rem 3rem;
         /* margin: auto; */
         justify-content: center;
         align-items: center;
+        /* position: inherit; */
 
 
     }
-    .introduction .about h3{
+    .introduction .about h3, h1, p{
         text-align: center;
+    }
+    .introduction .message-me a{
+        margin: auto;
     }
 }
