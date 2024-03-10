@@ -13,13 +13,15 @@ body {
 .nav {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-between;
   position: sticky;
   /* margin: auto; */
   top: 0px;
+  /* border-bottom: .001rem solid var(--sub-heading-color); */
   /* padding-top: 10px; */
   /* padding-bottom: 0px; */
   /* padding:0px 0px 0px 0px; */
+  box-shadow: 1px 1px 10px var(--sub-heading-color);
 }
 .nav .menu-link ul,
 .social-link ul {

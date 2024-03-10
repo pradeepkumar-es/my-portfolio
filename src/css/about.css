@@ -1,14 +1,22 @@
-.about .intro{
+.aboutme {
+    padding: .1rem 7.7rem .1rem 7.7rem;
+    position: initial;
+    top: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.aboutme .intro{
     display: flex;
     flex-direction: row;
 }
-.about .intro .mypic img{
+.aboutme .intro .mypic img{
     width: 13rem;
     height: 13rem;
     border-radius: 50%;
 }
 @media only screen and (max-width:768px){
-    .about .intro{
+    .aboutme .intro{
         display: flex;
         flex-direction: column-reverse;
         align-items: center;

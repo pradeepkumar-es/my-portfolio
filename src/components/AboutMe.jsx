@@ -4,7 +4,7 @@ import '../css/about.css'
 
 function AboutMe() {
   return (
-    <div className='about'>
+    <div className='aboutme'>
       <div className="intro">
         <div className="text">
           <h1>A Glimpse into My World</h1>
