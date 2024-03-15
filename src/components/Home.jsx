@@ -20,7 +20,7 @@ import { GiJourney } from "react-icons/gi";
 import { certificates, myjourney } from './data'
 import { RxSize } from "react-icons/rx";
 import MYJourney from "./MyJourney";
-import MovingElement from "./MovingElement";
+// import MovingElement from "./MovingElement";
 export default function Home() {
 
     return (
@@ -59,7 +59,7 @@ export default function Home() {
                     <h1><GiJourney style={{ width: "2.5rem", height: "2.5rem" }} /> &nbsp;Academic Journey</h1>
                     <div className="journeySection">
                         <div className="path">
-                            <MovingElement/>
+                            {/* <MovingElement/> */}
                         </div>
                         <div className="jcard">
                             {
