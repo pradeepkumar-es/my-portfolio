@@ -29,5 +29,9 @@ div{
 }
 body{
     background-color: var(--bg-color);
+    /* margin: 5px; */
     /* background: linear-gradient(to bottom right, var(--bg-color) 45%, var(--sub-heading-color) 55%  ); */
+}
+#root{
+    margin: 0px;
 }

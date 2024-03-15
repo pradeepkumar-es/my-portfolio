@@ -23,7 +23,7 @@ export default function Home() {
             <div className="home">
                 <div className="introduction">
                     <div className="about">
-                        {/* <h2>Hello, I'm</h2>
+                        {/* <h2>Hello,  I'm</h2>
                     <h1> Pradeep</h1> */}
                         <h3>WEB DEVELOPER & DESIGNER<div className="shdash"></div></h3>
                         <h1>Elevating Brands Through Innovative Web Solutions</h1>

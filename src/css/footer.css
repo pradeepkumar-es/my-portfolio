@@ -1,5 +1,5 @@
 .footer{
-    position:relative;
+    position:inherit;
     z-index: 1;
     bottom: 1px;
     display: flex;

@@ -4,11 +4,11 @@ display: flex;
 flex-direction: column;       
 flex-wrap:wrap;  
 border: double 5px var(--sub-heading-color);   
-margin: 17px 25px;     
+margin: 17px 10px;     
 justify-content: space-around;                                                                                                        
 }
 .cert .cimg{
-    max-width: 23rem;
+    max-width: 20rem;
     max-height: 23rem;
     padding: 6px 4px;
     
