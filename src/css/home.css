@@ -102,6 +102,18 @@
 .home .message-me .linkedin:hover, .home .web:hover, .home .email:hover{
     transform: scale(1.5);
 }
+.home .journey .journeySection{
+    display:grid;
+    grid-template-columns:1fr 25fr;
+    grid-row-start: 1;
+    grid-row-end:auto;
+}
+.home .journeySection .path{
+    border: 1px solid red;
+}
+.home .journeySection .jcard{
+    border: 1px solid green;
+}
 .home .certification{
     display: flex;
     flex-direction: column;
@@ -109,7 +121,7 @@
     text-align: center;
     margin-top: 3rem;
 }
-.home .certification h1 {
+.home .certification h1, .home .journey h1 {
     /* text-decoration: underline; */
     text-align: center;
     font-size:xx-large;

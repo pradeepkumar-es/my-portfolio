@@ -15,9 +15,12 @@ import { FaGlobe } from "react-icons/fa";
 import { IoMdMail } from "react-icons/io";
 import { IoIosArrowRoundForward } from "react-icons/io";
 import { BsDashLg } from "react-icons/bs";
-import {PiCertificateBold} from 'react-icons/pi'
-import { certificates } from './data'
+import { PiCertificateBold } from 'react-icons/pi'
+import { GiJourney } from "react-icons/gi";
+import { certificates, myjourney } from './data'
 import { RxSize } from "react-icons/rx";
+import MYJourney from "./MyJourney";
+import MovingElement from "./MovingElement";
 export default function Home() {
 
     return (
@@ -52,19 +55,41 @@ export default function Home() {
                 <div className="highlights">
                     <Highlights />
                 </div>
+                <div className="journey">
+                    <h1><GiJourney style={{ width: "2.5rem", height: "2.5rem" }} /> &nbsp;Academic Journey</h1>
+                    <div className="journeySection">
+                        <div className="path">
+                            <MovingElement/>
+                        </div>
+                        <div className="jcard">
+                            {
+                                myjourney.map((data) => {
+                                    return (
+                                        <MYJourney
+                                            jlogo={data.logo}
+                                            jname={data.name}
+                                            jdetail={data.detail}
+                                            jperiod={data.period}
+                                        />
+                                    )
+                                })
+                            }
+                        </div>
+                    </div>
+                </div>
                 <div className="certification">
-                    <h1><PiCertificateBold style={{width:"2.5rem", height:"2.5rem"}} /> &nbsp; Certifications</h1> {/*&nbsp; => non breaking space */}
+                    <h1><PiCertificateBold style={{ width: "2.5rem", height: "2.5rem" }} /> &nbsp; Certifications</h1> {/*&nbsp; => non breaking space */}
                     <div className="certificates">
-                    {
-                        certificates.map((data) => {
-                            return(
-                            <Certifications 
-                            cimg ={data.cimg}
-                            cname ={data.name}
-                            />
-                            )
-                        })
-                    }
+                        {
+                            certificates.map((data) => {
+                                return (
+                                    <Certifications
+                                        cimg={data.cimg}
+                                        cname={data.name}
+                                    />
+                                )
+                            })
+                        }
                     </div>
                 </div>
             </div>

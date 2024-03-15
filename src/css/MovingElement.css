@@ -1,0 +1,23 @@
+/* MovingElement.css */
+
+/* .moving-element {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 50px;
+    background-color: #007bff;
+    color: #fff;
+    text-align: center;
+    line-height: 50px;
+    font-size: 16px;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+  }
+  
+  .moving-element.scrolled {
+    top: calc(100% - 50px); /* Move the element to the bottom */
+    /* opacity: 1; */
+  /* } */ 
+  
