@@ -29,7 +29,7 @@ export default function Home() {
                     <h1> Pradeep</h1> */}
                         <h3>WEB DEVELOPER & DESIGNER<div className="shdash"></div></h3>
                         <h1>Elevating Brands Through Innovative Web Solutions</h1>
-                        <p>I am Pradeep, currently pursuing my undergraduate studies at the IIT, Kanpur. Specializing in Biological Sciences and Bioengineering, my academic journey has instilled in me a profound appreciation for innovation and technology's transformative power. As a keen interest in technology to solve real-world challenges, I am deeply immersed in the world of web development. </p>
+                        <p>Hey! I am Pradeep, currently pursuing my undergraduate studies at the IIT, Kanpur. My academic journey has produced deep appreciation for innovation and technology's transformative power. As a keen interest in technology to solve real-world challenges, I am deeply immersed in the world of web development. </p>
                         <div className="message-me">
 
                             <a href="mailto:pradeepkumariitk22@gmail.com?subject=Contact For &body=Hi Pradeep,%20I"><p>Contact Me</p></a>
