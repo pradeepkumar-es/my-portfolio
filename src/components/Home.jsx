@@ -15,7 +15,9 @@ import { FaGlobe } from "react-icons/fa";
 import { IoMdMail } from "react-icons/io";
 import { IoIosArrowRoundForward } from "react-icons/io";
 import { BsDashLg } from "react-icons/bs";
+import {PiCertificateBold} from 'react-icons/pi'
 import { certificates } from './data'
+import { RxSize } from "react-icons/rx";
 export default function Home() {
 
     return (
@@ -27,7 +29,7 @@ export default function Home() {
                     <h1> Pradeep</h1> */}
                         <h3>WEB DEVELOPER & DESIGNER<div className="shdash"></div></h3>
                         <h1>Elevating Brands Through Innovative Web Solutions</h1>
-                        <p>My Mission is to create Engaging, Fast, and Loving Websites for Clients and User </p>
+                        <p>I am Pradeep, currently pursuing my undergraduate studies at the IIT, Kanpur. Specializing in Biological Sciences and Bioengineering, my academic journey has instilled in me a profound appreciation for innovation and technology's transformative power. As a keen interest in technology to solve real-world challenges, I am deeply immersed in the world of web development. </p>
                         <div className="message-me">
 
                             <a href="mailto:pradeepkumariitk22@gmail.com?subject=Contact For &body=Hi Pradeep,%20I"><p>Contact Me</p></a>
@@ -51,7 +53,7 @@ export default function Home() {
                     <Highlights />
                 </div>
                 <div className="certification">
-                    <h1>Certifications</h1>
+                    <h1><PiCertificateBold style={{width:"2.5rem", height:"2.5rem"}} /> &nbsp; Certifications</h1> {/*&nbsp; => non breaking space */}
                     <div className="certificates">
                     {
                         certificates.map((data) => {
