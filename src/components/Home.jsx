@@ -3,6 +3,8 @@ import AboutMe from './AboutMe'
 import Projects from "./Projects";
 import Contact from "./Contact";
 import Footer from "./Footer";
+import Highlights from './Highlights'
+import Certifications from "./Certifications";
 import pradeepProfile from "../images/pradeep-pic-nobg.png"
 import webIcon from "../images/web-icon.png"
 import linkedinIcon from "../images/linkedin-icon.png"
@@ -13,6 +15,7 @@ import { FaGlobe } from "react-icons/fa";
 import { IoMdMail } from "react-icons/io";
 import { IoIosArrowRoundForward } from "react-icons/io";
 import { BsDashLg } from "react-icons/bs";
+import { certificates } from './data'
 export default function Home() {
 
     return (
@@ -44,32 +47,23 @@ export default function Home() {
                         <img className="pradeep-profile" src={pradeepProfile} alt="Profile of Pradeep" />
                     </div>
                 </div>
-                <div className="experience">
-                    {/* hey <hr />
-                hey <hr />
-                hey <hr />
-                hey <hr />
-                hey <hr />
-                hey <hr />
-                hey <hr />
-                hey <hr />
-                hey <hr />
-                hey <hr />
-                hey <hr />
-                hey <hr />
-                hey <hr />
-                hey <hr />
-                hey <hr />
-                hey <hr />
-                hey <hr />
-                hey <hr />
-                hey <hr />
-                hey <hr />
-                hey <hr />
-                hey <hr />
-                hey <hr />
-                hey <hr />
-                hey <hr /> */}
+                <div className="highlights">
+                    <Highlights />
+                </div>
+                <div className="certification">
+                    <h1>Certifications</h1>
+                    <div className="certificates">
+                    {
+                        certificates.map((data) => {
+                            return(
+                            <Certifications 
+                            cimg ={data.cimg}
+                            cname ={data.name}
+                            />
+                            )
+                        })
+                    }
+                    </div>
                 </div>
             </div>
         </>

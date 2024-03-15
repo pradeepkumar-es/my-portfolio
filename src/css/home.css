@@ -4,12 +4,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     /* position: inherit; */
     /* z-index: 1; */
 }
 .introduction{
     display: flex;
-    margin: 2rem 8rem;
+    /* margin: 2rem 8rem; */
 
     
 }
@@ -99,6 +100,24 @@
 .home .message-me .linkedin:hover, .home .web:hover, .home .email:hover{
     transform: scale(1.5);
 }
+.home .certification{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    text-align: center;
+    margin-top: 3rem;
+}
+.home .certification h1 {
+    text-decoration: underline;
+}
+.home .certificates {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    
+}
 @media only screen and (max-width:768px){
     .introduction{
         display: flex;
@@ -116,5 +135,9 @@
     }
     .introduction .message-me a{
         margin: auto;
+    }
+    .home .certificates{
+        display: flex;
+        flex-direction: column;
     }
 }

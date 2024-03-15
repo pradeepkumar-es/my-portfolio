@@ -10,6 +10,7 @@
     --text-color:black;
     --icon-color:black;
     --sub-heading-color:rgb(133, 38, 10);
+    --footer-color:rgb(88, 85, 85);
 }
 .dark-Mode{
     --bg-color:#070122;
@@ -17,13 +18,16 @@
     --text-color:white;
     --icon-color:white;
     --sub-heading-color:yellow;
+    --footer-color:rgb(52, 34, 56);
 }
-h1,p,h2{
+h1,p,h2,h4{
     color: var(--main-h1-color);
 }
 div{
     background-color: var(--bg-color);
+    /* background: linear-gradient(to bottom right, var(--bg-color) 45%, var(--sub-heading-color) 55%  ); */
 }
 body{
     background-color: var(--bg-color);
+    /* background: linear-gradient(to bottom right, var(--bg-color) 45%, var(--sub-heading-color) 55%  ); */
 }
