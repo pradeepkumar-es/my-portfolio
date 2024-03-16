@@ -5,7 +5,8 @@ import '../css/about.css'
 function AboutMe() {
   return (
     <div className='aboutme'>
-      <div className="intro">
+      <p>Under Construction</p>
+      {/* <div className="intro">
         <div className="text">
           <h1>A Glimpse into My World</h1>
           <p>I am a second-year undergraduate student
@@ -17,7 +18,7 @@ function AboutMe() {
         </div>
         <div className="mypic"><img src={pic} alt='Pradeep'/></div>
       </div>
-      <div className="journey"></div>
+      <div className="journey"></div> */}
     </div>
   )
 }

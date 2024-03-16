@@ -32,7 +32,8 @@ export default function Home() {
                         {/* <h2>Hello,  I'm</h2>
                     <h1> Pradeep</h1> */}
                         <h3>WEB DEVELOPER & DESIGNER<div className="shdash"></div></h3>
-                        <h1 id="aboutme">Elevating Brands Through Innovative Web Solutions</h1>
+                        <h1>Elevating Brands Through Innovative Web Solutions</h1>
+                        {/* <h1 id="aboutme">Elevating Brands Through Innovative Web Solutions</h1> */}
                         <p >Hey! I am Pradeep, currently pursuing my undergraduate studies at the IIT, Kanpur. My academic journey has produced deep appreciation for innovation and technology's transformative power. As a keen interest in technology to solve real-world challenges, I am deeply immersed in the world of web development. </p>
                         <div className="message-me">
 
@@ -78,7 +79,8 @@ export default function Home() {
                         </div>
                     </div>
                 </div>
-                <div id="projects" className="myproject">
+                <div className="myproject">
+                {/* <div id="projects" className="myproject"> */}
                   <p>Projects</p>
                 </div>
                 <div className="certification">

@@ -28,10 +28,10 @@ export default function Navabar() {
                 <div className="menu-link">
                     <ul>
                         <li> <Link className='home' to="/">Home</Link> </li>
-                        {/* <li> <Link to="/aboutme">About Me</Link> </li> */}
-                        <li> <a href='#aboutme'>About Me</a> </li>
-                        {/* <li><Link to="/projects">My Projects</Link></li> */}
-                        <li><a href="#projects">My Projects</a></li>
+                        <li> <Link to="/aboutme">About Me</Link> </li>
+                        {/* <li> <a href='#aboutme'>About Me</a> </li> */}
+                        <li><Link to="/projects">My Projects</Link></li>
+                        {/* <li><a href="#projects">My Projects</a></li> */}
                         <li><Link to="/contact">Contact Me</Link></li>
                     </ul>
                 </div>
@@ -51,10 +51,10 @@ export default function Navabar() {
                         <div className="cross"><RxCross1 onClick={togglemenu} className={openMenu ? 'activate-cross' : 'crossStyle'} /></div>
                         <ul className={openMenu ? 'activate-mobileNavbar' : 'mobileMenuStyle'}>
                              <Link to="/"><li onClick={togglemenu} className={openMenu?"hideMenuPart":"none"} >Home</li></Link>                     
-                             {/* <Link to="/aboutme"><li onClick={togglemenu} className={openMenu?"hideMenuPart":"none"} >About Me</li></Link> */}
-                             <a href='#aboutme'><li onClick={togglemenu} className={openMenu?"hideMenuPart":"none"} >About Me</li></a>
-                            {/* <Link to="/projects"><li onClick={togglemenu} className={openMenu?"hideMenuPart":"none"}>My Projects</li></Link> */}
-                            <a href="#projects"><li onClick={togglemenu} className={openMenu?"hideMenuPart":"none"}>My Projects</li></a>
+                             <Link to="/aboutme"><li onClick={togglemenu} className={openMenu?"hideMenuPart":"none"} >About Me</li></Link>
+                             {/* <a href='#aboutme'><li onClick={togglemenu} className={openMenu?"hideMenuPart":"none"} >About Me</li></a> */}
+                            <Link to="/projects"><li onClick={togglemenu} className={openMenu?"hideMenuPart":"none"}>My Projects</li></Link>
+                            {/* <a href="#projects"><li onClick={togglemenu} className={openMenu?"hideMenuPart":"none"}>My Projects</li></a> */}
                             <Link to="/contact"><li onClick={togglemenu} className={openMenu?"hideMenuPart":"none"}>Contact Me</li></Link>
                         </ul>
                     </div>
