@@ -11,14 +11,16 @@
     --icon-color:black;
     --sub-heading-color:rgb(133, 38, 10);
     --footer-color:rgb(88, 85, 85);
+    --secondary-bg-color:rgb(136, 195, 223);
 }
 .dark-Mode{
-    --bg-color:#070122;
+    --bg-color:#13112b;
     --main-h1-color:white;
     --text-color:white;
     --icon-color:white;
     --sub-heading-color:yellow;
     --footer-color:rgb(52, 34, 56);
+    --secondary-bg-color:rgb(218, 153, 226);
 }
 h1,p,h2,h4{
     color: var(--main-h1-color);

@@ -20,6 +20,7 @@ import { GiJourney } from "react-icons/gi";
 import { certificates, myjourney } from './data'
 import { RxSize } from "react-icons/rx";
 import MYJourney from "./MyJourney";
+// import Navabar from "./Navbar";
 // import MovingElement from "./MovingElement";
 export default function Home() {
 
@@ -27,12 +28,12 @@ export default function Home() {
         <>
             <div className="home">
                 <div className="introduction">
-                    <div className="about">
+                    <div  className="about">
                         {/* <h2>Hello,  I'm</h2>
                     <h1> Pradeep</h1> */}
                         <h3>WEB DEVELOPER & DESIGNER<div className="shdash"></div></h3>
-                        <h1>Elevating Brands Through Innovative Web Solutions</h1>
-                        <p>Hey! I am Pradeep, currently pursuing my undergraduate studies at the IIT, Kanpur. My academic journey has produced deep appreciation for innovation and technology's transformative power. As a keen interest in technology to solve real-world challenges, I am deeply immersed in the world of web development. </p>
+                        <h1 id="aboutme">Elevating Brands Through Innovative Web Solutions</h1>
+                        <p >Hey! I am Pradeep, currently pursuing my undergraduate studies at the IIT, Kanpur. My academic journey has produced deep appreciation for innovation and technology's transformative power. As a keen interest in technology to solve real-world challenges, I am deeply immersed in the world of web development. </p>
                         <div className="message-me">
 
                             <a href="mailto:pradeepkumariitk22@gmail.com?subject=Contact For &body=Hi Pradeep,%20I"><p>Contact Me</p></a>
@@ -76,6 +77,9 @@ export default function Home() {
                             }
                         </div>
                     </div>
+                </div>
+                <div id="projects" className="myproject">
+                  <p>Projects</p>
                 </div>
                 <div className="certification">
                     <h1><PiCertificateBold style={{ width: "2.5rem", height: "2.5rem" }} /> &nbsp; Certifications</h1> {/*&nbsp; => non breaking space */}

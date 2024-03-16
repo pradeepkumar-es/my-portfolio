@@ -18,7 +18,7 @@ function App() {
         {alert("Website is under construction")}
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/aboutme" element={<AboutMe />} />
+          {/* <Route path="/aboutme" element={<AboutMe />} /> */}
           <Route path="/contact" element={<Contact />} />
           <Route path="/projects" element={<Projects />} />
         </Routes>
