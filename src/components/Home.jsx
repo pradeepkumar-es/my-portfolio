@@ -85,7 +85,7 @@ export default function Home() {
                     </div>
                 </div>
                 <div className="myproject">
-                <h1><GoProjectSymlink style={{ width: "2.5rem", height: "2.5rem" }} /> &nbsp; Projects (Prototype)</h1>
+                <h1><GoProjectSymlink style={{ width: "2.5rem", height: "2.5rem" }} />&nbsp;Projects Prototype</h1>
                     <div id="projects" className="myprojects">
                         
                         {
