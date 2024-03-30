@@ -9,7 +9,7 @@ export default function ProjectCard (props) {
                 <iframe src={props.prlink} frameborder="0"></iframe>
             </div>
             <div className="button">
-                <a href={props.prlink} target="_blank">View Projetcs</a>
+                <a href={props.prlink} target="_blank">View in Full Screen</a>
             </div>
         </div>
     )
