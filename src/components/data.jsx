@@ -64,10 +64,11 @@ export const myjourney =[
 ]
 export const projects = [
     {
+        
         image:docvaultImg,
-        link:"https://mytodowork.netlify.app/",
-        name:"To do app",
-        detail:"lorem"
+        link:"https://government-doc.netlify.app/",
+        name:"Government Doc App",
+        detail:"This website is provide fascillity to store your documents deigitally online and access from any where "
     },
     {
         image:docvaultImg,
@@ -84,9 +85,9 @@ export const projects = [
     },
     {
         image:docvaultImg,
-        link:"https://government-doc.netlify.app/",
-        name:"Government Doc App",
-        detail:"This website is provide fascillity to store your documents deigitally online and access from any where "
+        link:"https://mytodowork.netlify.app/",
+        name:"To do app",
+        detail:"lorem"
     },
     {
         image:docvaultImg,

@@ -5,9 +5,11 @@
 background-color: rgb(58, 226, 43);
 border: 1px solid black;
 cursor: pointer;
+text-align: center;
 }
 .ProjectCard .projectname h4{
     padding-bottom: .5rem;
+    text-align: center;
 }
 .ProjectCard .project iframe{
 height: 26rem;

@@ -20,15 +20,20 @@ import { GiJourney } from "react-icons/gi";
 import { certificates, myjourney } from './data'
 import { RxSize } from "react-icons/rx";
 import MYJourney from "./MyJourney";
+import { projects } from "./data";
+import ProjectCard from "./ProjectCard";
+import { GoProjectSymlink } from "react-icons/go";
+import { Link } from "react-router-dom";
 // import Navabar from "./Navbar";
 // import MovingElement from "./MovingElement";
 export default function Home() {
-
+    const maxProjectToShow = 2;
+    const projectToShow = projects.slice(0, maxProjectToShow);
     return (
         <>
             <div className="home">
                 <div className="introduction">
-                    <div  className="about">
+                    <div className="about">
                         {/* <h2>Hello,  I'm</h2>
                     <h1> Pradeep</h1> */}
                         <h3>WEB DEVELOPER & DESIGNER<div className="shdash"></div></h3>
@@ -80,9 +85,26 @@ export default function Home() {
                     </div>
                 </div>
                 <div className="myproject">
-                <div id="projects" className="myproject">
-                  <p>Projects</p>
-                  </div>
+                <h1><GoProjectSymlink style={{ width: "2.5rem", height: "2.5rem" }} /> &nbsp; Projects (Prototype)</h1>
+                    <div id="projects" className="myprojects">
+                        
+                        {
+                            projectToShow.map((data) => {
+                                return (
+                                    <>
+                                        <ProjectCard
+                                            primage={data.image}
+                                            prname={data.name}
+                                            prlink={data.link}
+                                            prdetail={data.detail}
+                                        />
+                                    </>
+                                )
+                            })
+                        }
+                    </div>
+                    <button className="load-project" >
+                       <Link to='/projects'>Load More Projects</Link> </button>
                 </div>
                 <div className="certification">
                     <h1><PiCertificateBold style={{ width: "2.5rem", height: "2.5rem" }} /> &nbsp; Certifications</h1> {/*&nbsp; => non breaking space */}
