@@ -1,0 +1,21 @@
+.ProjectCard{
+    padding: 1rem;
+}
+.ProjectCard .button {
+background-color: rgb(58, 226, 43);
+border: 1px solid black;
+cursor: pointer;
+}
+.ProjectCard .projectname h4{
+    padding-bottom: .5rem;
+}
+.ProjectCard .project iframe{
+height: 26rem;
+width: 36rem;
+}
+@media only screen and (max-width:768px){
+    .ProjectCard .project iframe{
+        height: 18rem;
+        width: 16rem;
+        }
+} 

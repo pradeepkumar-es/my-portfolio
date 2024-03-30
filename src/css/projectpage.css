@@ -1,0 +1,11 @@
+.projectpage{
+    text-align: center;
+    margin-top: 1rem;
+}
+.projectpage .projectlist{
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-items: center;
+}

@@ -5,6 +5,7 @@ import jnvlogo from '../images/jnv-logo.png'
 import iitklogo from '../images/iitk-logo.png'
 import dakshanalogo from '../images/dakshana-logo.png'
 import umlogo from '../images/um-logo.png'
+import docvaultImg from '../images/docvault.png'
 import biosociitklogo from '../images/biosociitk-logo.png'
 export const certificates =[
     {
@@ -60,4 +61,46 @@ export const myjourney =[
         detail:"High School",
         period:"(2014-2019)"
     }
+]
+export const projects = [
+    {
+        image:docvaultImg,
+        link:"https://mytodowork.netlify.app/",
+        name:"To do app",
+        detail:"lorem"
+    },
+    {
+        image:docvaultImg,
+        link:"https://imagefy.netlify.app/",
+        name:"Image Slider",
+        detail:"lorem"
+        
+    },
+    {
+        image:docvaultImg,
+        link:"https://appointeduhub.netlify.app/",
+        name:"Appoint Edu Hub",
+        detail:"This Project website is to provide service regarding booking appointment "
+    },
+    {
+        image:docvaultImg,
+        link:"https://government-doc.netlify.app/",
+        name:"Government Doc App",
+        detail:"This website is provide fascillity to store your documents deigitally online and access from any where "
+    },
+    {
+        image:docvaultImg,
+        link:"https://myquiz-world.netlify.app/",
+        name:"Quiz Website",
+        detail:"lorem"
+        
+    },
+    {
+        image:docvaultImg,
+        link:"https://game-registration.netlify.app/",
+        name:"Game registration",
+        detail:"lorem"
+    }
+    
+
 ]

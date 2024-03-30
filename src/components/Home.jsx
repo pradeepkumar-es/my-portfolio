@@ -80,8 +80,9 @@ export default function Home() {
                     </div>
                 </div>
                 <div className="myproject">
-                {/* <div id="projects" className="myproject"> */}
-                  {/* <p>Projects</p> */}
+                <div id="projects" className="myproject">
+                  <p>Projects</p>
+                  </div>
                 </div>
                 <div className="certification">
                     <h1><PiCertificateBold style={{ width: "2.5rem", height: "2.5rem" }} /> &nbsp; Certifications</h1> {/*&nbsp; => non breaking space */}
