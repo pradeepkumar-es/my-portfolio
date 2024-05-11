@@ -12,6 +12,7 @@
     --sub-heading-color:rgb(133, 38, 10);
     --footer-color:rgb(88, 85, 85);
     --secondary-bg-color:rgb(136, 195, 223);
+    --boundary-color:#13112b;
 }
 .dark-Mode{
     --bg-color:#13112b;

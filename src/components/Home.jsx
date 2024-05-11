@@ -23,6 +23,7 @@ import MYJourney from "./MyJourney";
 import { projects } from "./data";
 import ProjectCard from "./ProjectCard";
 import { GoProjectSymlink } from "react-icons/go";
+import { GrUserExpert } from "react-icons/gr";
 import { Link } from "react-router-dom";
 // import Navabar from "./Navbar";
 // import MovingElement from "./MovingElement";
@@ -83,6 +84,18 @@ export default function Home() {
                             }
                         </div>
                     </div>
+                </div>
+                <div className="skills">
+                <h1>< GrUserExpert  style={{ width: "2.5rem", height: "2.5rem" }} />&nbsp;My Skills</h1>
+                <div className="skillContainer">
+                <div>HTML</div>
+                <div>CSS</div>
+                <div>Javascript</div>
+                <div>React.js</div>
+                <div>Bootstrap</div>
+                <div>Firebase</div>
+                <div>Google Cloud</div>
+                </div>
                 </div>
                 <div className="myproject">
                 <h1><GoProjectSymlink style={{ width: "2.5rem", height: "2.5rem" }} />&nbsp;Projects Prototype</h1>

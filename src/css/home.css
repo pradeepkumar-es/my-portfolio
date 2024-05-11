@@ -7,6 +7,7 @@
     flex-direction: column;
     /* position: inherit; */
     /* z-index: 1; */
+    padding: 10px;
 }
 .introduction{
     display: flex;
@@ -113,6 +114,26 @@
 }
 .home .journeySection .jcard{
     border: 1px solid green;
+}
+.home .skills{
+    margin:40px auto;
+    text-align: center;
+}
+.home .skillContainer{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 5px;
+}
+.home .skillContainer > div{
+    background-color: white;
+    padding: 10px 20px;
+    flex-grow: 1;
+    border-radius: 5px;
+    font-size:x-large;
+    text-align: center;
+    font-weight: bold;
+    border: 1px solid var(--boundary-color);
 }
 .home .myproject{
     display: flex;
