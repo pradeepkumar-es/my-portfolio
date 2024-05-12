@@ -5,8 +5,43 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    align-items: center;
+    flex-direction: column;
     width: 100%;
     font-size: large;
     background-color: var(--footer-color);
+    /* background-color: black; */
 }
+.footer .social-link a {
+    color: var(--icon-color);
+  }
+.footer .social-link ul{
+    list-style: none;
+    display:flex;
+    gap:10px;
+}
+.footer .social-link{
+    /* margin-left: 100px; */
+    background-color: var(--footer-color);
+}
+.ftr-contact .contact-el {
+    font-weight: bold;
+}
+  .ftr-contact{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 25px;
+    width: 100%;
+    background-color: var(--footer-color);
+    color: var(--text-color);
+    /* flex-direction: column; */
+  }
+  @media only screen and (max-width:768px) {
+    .ftr-contact{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+    }
+  }

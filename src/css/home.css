@@ -103,6 +103,9 @@
 .home .message-me .linkedin:hover, .home .web:hover, .home .email:hover{
     transform: scale(1.5);
 }
+.home .journey {
+    margin-top: 40px;
+}
 .home .journey .journeySection{
     display:grid;
     grid-template-columns:1fr 25fr;
@@ -140,6 +143,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    flex-grow: 1;
 }
 .home .myprojects{
     display: flex;

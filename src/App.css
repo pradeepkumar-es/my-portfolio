@@ -11,7 +11,7 @@
     --text-color:black;
     --icon-color:black;
     --sub-heading-color:rgb(133, 38, 10);
-    --footer-color:rgb(88, 85, 85);
+    --footer-color:rgb(221, 213, 213);
     --secondary-bg-color:rgb(136, 195, 223);
     --boundary-color:#13112b;
 }
@@ -21,7 +21,7 @@
     --text-color:white;
     --icon-color:white;
     --sub-heading-color:yellow;
-    --footer-color:rgb(52, 34, 56);
+    --footer-color:black;
     --secondary-bg-color:rgb(218, 153, 226);
 }
 h1,p,h2,h4{
