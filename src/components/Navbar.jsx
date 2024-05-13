@@ -23,7 +23,7 @@ export default function Navabar() {
      return (
         <>
             <div className="nav">
-                <div className="logo"><h2><span>P</span>RADEEP <span>K</span>UMAR</h2></div>
+                <div className="logo"><h2><span>M</span>Y <span>P</span>ORTFOLIO</h2></div>
                 <div className="menu-link">
                     <ul>
                         <li> <Link className='home' to="/">Home</Link> </li>

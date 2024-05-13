@@ -17,11 +17,14 @@ body {
   position: sticky;
   /* margin: auto; */
   top: 0px;
+  width: 100%;
+  padding: 0;
+  margin: 0;
   /* border-bottom: .001rem solid var(--sub-heading-color); */
   /* padding-top: 10px; */
   /* padding-bottom: 0px; */
   /* padding:0px 0px 0px 0px; */
-  box-shadow: 1px 0px 15px var(--sub-heading-color);
+  /* box-shadow: 1px 0px 15px var(--sub-heading-color); */
 }
 .nav .menu-link ul{
   display: flex;

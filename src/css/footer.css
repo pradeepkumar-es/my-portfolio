@@ -6,10 +6,11 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 100%;
+    /* width: 100%; */
     font-size: large;
     background-color: var(--footer-color);
     /* background-color: black; */
+    max-width: auto;
 }
 .footer .social-link a {
     color: var(--icon-color);
@@ -29,9 +30,10 @@
   .ftr-contact{
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    gap:25em;
+    max-width: auto;
     padding: 25px;
-    width: 100%;
     background-color: var(--footer-color);
     color: var(--text-color);
     /* flex-direction: column; */
@@ -42,6 +44,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        gap: 5px;
+        gap: 1rem;
+        text-align: center;
     }
   }

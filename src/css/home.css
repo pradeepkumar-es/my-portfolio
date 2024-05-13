@@ -1,5 +1,5 @@
 .home{
-    position: inherit;
+    position:inherit;
     top: 44px;
     display: flex;
     justify-content: center;
@@ -7,17 +7,38 @@
     flex-direction: column;
     /* position: inherit; */
     /* z-index: 1; */
-    padding: 10px;
+    /* padding:0px 10px 10px 10px; */
 }
 .introduction{
     display: flex;
-    margin: 0rem 1rem;
-
+    /* margin: 3rem 3rem; */
+    justify-content: center;
+    align-items: center;
+    /* background-image: url(../images/website-development.png); */
+    /* background-size:100%; */
+    /* background-position: center; */
+    /* background-repeat: no-repeat; */
+    /* background-color: transparent; */
+    background-image: url(../images/webdev2nobg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    flex-grow: 1;
     
 }
+@media only screen and (max-width:989px) {
+    .home .introduction{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+}
 .home .about {
-    margin-top: 4rem;
-    /* padding: 0rem 1rem; */
+    /* margin-top: 4rem; */
+    padding: 1rem 1rem 0rem 6rem;
+    margin-left: 8rem;
+    background-color: transparent;
+    text-align:end;
 }
 /* .home .about .shdash{
     row-gap: 2rem;
@@ -25,15 +46,23 @@
     width: 20rem;
     background-color: var(--sub-heading-color);
 } */
+.introduction .profile{
+    background-color: transparent;
+}
+.introduction #pradeep-profile{
+    display: none;
+}
 .introduction .profile .pradeep-profile{
     max-width:22rem;
     /* position: relative; */
     /* top: 44px; */
     /* z-index: 0; */
-    box-shadow: 15px 5px 5px var(--text-color);
+    /* box-shadow: 15px 5px 5px var(--text-color); */
     /* filter: drop-shadow(20px 5px 5px  var(--text-color)); */
-    border-bottom: double 10px var(--text-color);
-    border-right: double 10px var(--text-color);
+    /* border-bottom: double 10px var(--text-color);
+    border-right: double 10px var(--text-color); */
+    border-radius:50%;
+    border-right: 1px solid var(--text-color);
 }
 .introduction h3{
     color:var(--sub-heading-color);
@@ -45,47 +74,47 @@
 .introduction h1{
     padding-bottom: 1rem;
     /* color:white; */
+    padding-left: 0;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 .introduction p{
-    font-size: large;
+    font-size: x-large;
     /* color: white; */
-    padding-bottom: 1em;
     font-family:sans-serif;
 }
-   .message-me{
+   /* .message-me{
     display: flex;
     align-items: flex-start;
-    margin-top: 1rem;
+    margin-top: 1rem; */
     
     /* border: 1px solid white; */
     
     /* padding-top: 2px; */
    
-}
+/* } */
 
-.message-me p{
+/* .message-me p{
     font-size:x-large;
     /* vertical-align: bottom; */
-    padding: 1rem;
+    /* padding: 1rem;
     cursor: pointer;
     font-weight: bolder;
     border: 1px solid var(--text-color);
     border-radius:.2rem ;
     box-shadow: 10px 5px 5px brown;
     width: 9rem;
-    transition: transform 1s;
+    transition: transform 1s; */
     /* text-decoration: none; */
     
-}
-.home .message-me p:hover{
+/* } */ 
+/* .home .message-me p:hover{
     transform:scale(1.1) ;
 } 
 .message-me a{
     text-decoration: none;
     color: var(--text-color);
-}
-.about .social-icons{
+} */
+/* .about .social-icons{
     display: flex;
     flex-direction: row;
     justify-items: center;
@@ -102,7 +131,7 @@
 }
 .home .message-me .linkedin:hover, .home .web:hover, .home .email:hover{
     transform: scale(1.5);
-}
+} */
 .home .journey {
     margin-top: 40px;
 }
@@ -196,7 +225,7 @@
     .introduction{
         display: flex;
         flex-direction: column-reverse;
-        margin: 2rem 3rem;
+        margin: 0rem 1rem;
         /* margin: auto; */
         justify-content: center;
         align-items: center;
@@ -204,8 +233,38 @@
 
 
     }
+    .home .about{
+        padding: 0 1rem;
+        margin-left: 0rem;
+    }
+    .introduction #pradeep-profile{
+        display: block;
+        margin:0px 8px 15px 0px;
+    }
+    .introduction .profile .pradeep-profile{
+        display: none;
+    }
+    .introduction .about #pradeep-profile{
+        max-width:22rem;
+        /* position: relative; */
+        /* top: 44px; */
+        /* z-index: 0; */
+        /* box-shadow: 15px 5px 5px var(--text-color); */
+        /* filter: drop-shadow(20px 5px 5px  var(--text-color)); */
+        /* border-bottom: double 10px var(--text-color);
+        border-right: double 10px var(--text-color); */
+        border-radius:50%;
+        border-right: 1px solid var(--text-color);
+    }
     .introduction .about h3, h1, p{
         text-align: center;
+    }
+    .introduction .about p{
+        border-radius: 1rem 2rem 0rem 1rem;
+        border: 1px solid var(--text-color);
+        padding:1em;
+        /* font-weight:bold; */
+        font-family:Georgia, 'Times New Roman', Times, serif;
     }
     .introduction .message-me a{
         margin: auto;
