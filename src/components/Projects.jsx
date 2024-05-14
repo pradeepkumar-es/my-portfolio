@@ -5,7 +5,7 @@ import '../css/projectpage.css'
 function Projects() {
   return (
     <div className="projectpage">
-      <h2>Projects (Prototype Version)</h2>
+      <h1>My Projects (Prototype Version)</h1>
       <div className="projectlist">
         {
           projects.map((data) => {
@@ -14,6 +14,7 @@ function Projects() {
 
                 <ProjectCard
                   primage={data.image}
+                  prtech ={data.tech}
                   prname={data.name}
                   prlink={data.link}
                   prdetail={data.detail}

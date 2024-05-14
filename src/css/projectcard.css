@@ -1,5 +1,21 @@
 .ProjectCard{
     padding: 1rem;
+    width: 18rem;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: aliceblue;
+    border-radius: .5em;
+    text-align: start;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.ProjectCard  img{
+    max-width: 17rem;
+    border-radius: .5em;
+    margin: auto;
+    /* padding-bottom: 1.5em; */
+    /* text-align: center; */
 }
 .ProjectCard .button {
 background-color: rgb(58, 226, 43);
@@ -7,10 +23,26 @@ border: 1px solid black;
 cursor: pointer;
 text-align: center;
 }
-.ProjectCard .projectname h4{
+.ProjectCard .projectname{
     padding-bottom: .5rem;
-    text-align: center;
+    color: black;
+    /* text-align: start; */
 }
+.ProjectCard .tech{
+    /* text-align: start; */
+    color:#ac91ea;
+    margin-top: 1.5em;
+    margin-bottom: 1px;
+}
+.ProjectCard p{
+    color: black;
+    margin-top: .5em;
+    text-align: left;
+    /* font-weight: lighter; */
+}
+.ProjectCard .pce{
+    padding-left: 6px;
+} 
 .ProjectCard .project iframe{
 height: 26rem;
 width: 36rem;

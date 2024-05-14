@@ -1,11 +1,20 @@
 .projectpage{
     text-align: center;
-    margin-top: 1rem;
+    padding: 0;
+    margin: 0;
+    background-image: url(../images/ptechnology-background.jpg);
+}
+.projectpage h1{
+    padding-top: 3rem;
 }
 .projectpage .projectlist{
+    padding: 4rem;
     display: flex;
     flex-direction: row;
     flex-wrap:wrap;
     justify-content: center;
     align-items: center;
+    gap: 2rem;
+    background-image: url(../images/ptechnology-background.jpg);
+    background-size: cover;
 }

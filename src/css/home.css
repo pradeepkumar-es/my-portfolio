@@ -180,10 +180,11 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    gap: 2rem;
 }
 .home .myproject h1{
     text-align: center;
-    padding-top: 1rem;
+    padding: 1rem 0rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -195,7 +196,7 @@
     border: 1px solid var(--text-color);
     border-radius: 5%;
     text-align: center;
-    margin: auto;
+    margin-top:1rem;
     cursor: pointer;
 }
 .home .certification{

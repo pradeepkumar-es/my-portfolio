@@ -110,6 +110,7 @@ export default function Home() {
                                             primage={data.image}
                                             prname={data.name}
                                             prlink={data.link}
+                                            prtech={data.tech}
                                             prdetail={data.detail}
                                         />
                                     </>

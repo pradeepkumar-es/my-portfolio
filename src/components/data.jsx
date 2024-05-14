@@ -67,12 +67,14 @@ export const projects = [
         
         image:docvaultImg,
         link:"https://government-doc.netlify.app/",
+        tech:"HTML | CSS | Javascript | Firebase | React.js ",
         name:"Government Doc App",
         detail:"This website is provide fascillity to store your documents deigitally online and access from any where "
     },
     {
         image:docvaultImg,
         link:"https://imagefy.netlify.app/",
+        tech:"HTML | CSS | Javascript ",
         name:"Image Slider",
         detail:"lorem"
         
@@ -80,18 +82,21 @@ export const projects = [
     {
         image:docvaultImg,
         link:"https://appointeduhub.netlify.app/",
+        tech:"HTML | CSS | Javascript | Firebase | React.js ",
         name:"Appoint Edu Hub",
         detail:"This Project website is to provide service regarding booking appointment "
     },
     {
         image:docvaultImg,
         link:"https://mytodowork.netlify.app/",
+        tech:"HTML | CSS | Javascript",
         name:"To do app",
         detail:"lorem"
     },
     {
         image:docvaultImg,
         link:"https://myquiz-world.netlify.app/",
+        tech:"HTML | CSS | Javascript",
         name:"Quiz Website",
         detail:"lorem"
         
@@ -99,6 +104,7 @@ export const projects = [
     {
         image:docvaultImg,
         link:"https://game-registration.netlify.app/",
+        tech:"HTML | CSS | Javascript | Firebase | React.js ",
         name:"Game registration",
         detail:"lorem"
     }

@@ -10,7 +10,7 @@
     font-size: large;
     background-color: var(--footer-color);
     /* background-color: black; */
-    max-width: auto;
+    width: auto;
 }
 .footer .social-link a {
     color: var(--icon-color);
@@ -29,10 +29,13 @@
 }
   .ftr-contact{
     display: flex;
+    flex-wrap: nowrap;
     flex-direction: row;
-    justify-content: space-between;
-    gap:25em;
-    max-width: auto;
+    /* justify-content: space-between; */
+    justify-content: space-around;
+    gap:15em;
+    width: auto;
+    /* width: 100%; */
     padding: 25px;
     background-color: var(--footer-color);
     color: var(--text-color);
