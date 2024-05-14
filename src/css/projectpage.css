@@ -3,6 +3,9 @@
     padding: 0;
     margin: 0;
     background-image: url(../images/ptechnology-background.jpg);
+    /* background-size: cover; */
+    /* background-repeat: repeat-y; */
+    min-height: 100vh;
 }
 .projectpage h1{
     padding-top: 3rem;

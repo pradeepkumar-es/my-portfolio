@@ -69,7 +69,7 @@ export const projects = [
         link:"https://government-doc.netlify.app/",
         tech:"HTML | CSS | Javascript | Firebase | React.js ",
         name:"Government Doc App",
-        detail:"This website is provide fascillity to store your documents digitally online and access from any where "
+        detail:"This website provide fascillity to store your documents digitally online and access from any where "
     },
     {
         image:docvaultImg,

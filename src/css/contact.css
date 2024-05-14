@@ -7,7 +7,7 @@
   background-color: var(--secondary-bg-color);
   justify-content: center;
   align-items: center;
-  height: auto;
+  min-height:100vh;
   /* box-shadow: 5px 15px 10px var(--text-color); */
   /* border: 1px solid var(--sub-heading-color); */
 }

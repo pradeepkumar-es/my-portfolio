@@ -5,6 +5,11 @@
     /* background-color:rgb(7, 1, 34); */
     /* position: relative; */
 }
+.app{
+    min-height:100vh; /*this will set minimum height to 100% according to current device */
+    display: flex;
+    flex-direction: column;
+}
 .light-Mode{
     --bg-color:white;
     --main-h1-color:black;

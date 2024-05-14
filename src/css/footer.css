@@ -1,7 +1,9 @@
 .footer{
-    position:inherit;
+    /* position:relative;
     z-index: 1;
-    bottom: 1px;
+    bottom: 0; */
+    margin-top: auto; /* for fixing footer to 
+    attach bottom always, bu this code it will take as much as possible margin from top of content*/
     display: flex;
     justify-content: center;
     align-items: center;
@@ -10,7 +12,7 @@
     font-size: large;
     background-color: var(--footer-color);
     /* background-color: black; */
-    width: auto;
+    width: 100vw;
 }
 .footer .social-link a {
     color: var(--icon-color);
@@ -34,7 +36,9 @@
     /* justify-content: space-between; */
     justify-content: space-around;
     gap:15em;
-    width: auto;
+    /* width: 100vw;  */
+    /* This line code solved the working of justify content 
+    as it is not working width:auto or 100%*/
     /* width: 100%; */
     padding: 25px;
     background-color: var(--footer-color);
