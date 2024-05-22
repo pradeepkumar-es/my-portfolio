@@ -7,6 +7,11 @@ import dakshanalogo from '../images/dakshana-logo.png'
 import umlogo from '../images/um-logo.png'
 import docvaultImg from '../images/docvault.png'
 import biosociitklogo from '../images/biosociitk-logo.png'
+import toDo from '../images/to-do.jpg'
+import blackJack from '../images/black-jack.jpg'
+import familyCart from '../images/family-cart.jpg'
+import passengerCounter from '../images/passenger-counter.jpg'
+import leadTracker from  '../images/lead-tracker.jpg'
 export const certificates =[
     {
         cimg:gdsc,
@@ -87,11 +92,11 @@ export const projects = [
         detail:"This Project website is to provide service regarding booking appointment "
     },
     {
-        image:docvaultImg,
+        image:toDo,
         link:"https://mytodowork.netlify.app/",
         tech:"HTML | CSS | Javascript",
         name:"To do app",
-        detail:"lorem"
+        detail:"This web App will allow you to make/edit/delete/mark/save the task list"
     },
     {
         image:docvaultImg,
@@ -107,7 +112,34 @@ export const projects = [
         tech:"HTML | CSS | Javascript | Firebase | React.js ",
         name:"Game registration",
         detail:"lorem"
-    }
-    
+    },
+    {
+        image: blackJack,
+        link:"https://pradeepkumar-es.github.io/Blackjack-Game/",
+        tech: "HTML | CSS | Javascript",
+        name:"BlackJack Game",
+        detail:"Blackjack is a popular casino card game where players aim to have card totals closer to 21 than the dealer without exceeding 21"
+    },
+    {
+        image:familyCart,
+        link:"https://pradeepkumar-es.github.io/add-to-cart/",
+        tech: "HTML | CSS | Javascript | Firebase",
+        name: "Add To Cart",
+        detail: "Add To cart is web App for adding/modifying/saving list of shopping."
+    },
+    {
+        image:passengerCounter,
+        link:"https://pradeepkumar-es.github.io/passenger-counter/",
+        tech: "HTML | CSS | Javascript",
+        name: "Passenger Counter",
+        detail: "It counts the passenger and save the data on each entry."
+    },
+    {
+        image:leadTracker,
+        link:"https://pradeepkumar-es.github.io/lead-tracker-chrome-extension/",
+        tech: "HTML | CSS | Javascript",
+        name: "Lead Tracker Chrome Extension",
+        detail:"it saves the current tab url of the browser & input url for reference."
 
+    }
 ]
