@@ -12,6 +12,7 @@ import blackJack from '../images/black-jack.jpg'
 import familyCart from '../images/family-cart.jpg'
 import passengerCounter from '../images/passenger-counter.jpg'
 import leadTracker from  '../images/lead-tracker.jpg'
+import airbnbLogo from '../images/airbnb-logo.png'
 export const certificates =[
     {
         cimg:gdsc,
@@ -141,5 +142,12 @@ export const projects = [
         name: "Lead Tracker Chrome Extension",
         detail:"it saves the current tab url of the browser & input url for reference."
 
+    },
+    {
+        image:airbnbLogo,
+        link:"https://airbnb-web.netlify.app/",
+        tech:"HTML | CSS | Javascript | React.js",
+        name: "AirBnb Clone web",
+        detail:"Airbnb, Inc. is an American company operating an online marketplace for short- and long-term homestays and experiences. The company acts as a broker and charges a commission from each booking."
     }
 ]
