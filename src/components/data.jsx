@@ -145,7 +145,7 @@ export const projects = [
     },
     {
         image:airbnbLogo,
-        link:"https://airbnb-web.netlify.app/",
+        link:"https://airbnb-cloneweb.netlify.app/",
         tech:"HTML | CSS | Javascript | React.js",
         name: "AirBnb Clone web",
         detail:"Airbnb, Inc. is an American company operating an online marketplace for short- and long-term homestays and experiences. The company acts as a broker and charges a commission from each booking."
