@@ -13,6 +13,7 @@ import familyCart from '../images/family-cart.jpg'
 import passengerCounter from '../images/passenger-counter.jpg'
 import leadTracker from  '../images/lead-tracker.jpg'
 import airbnbLogo from '../images/airbnb-logo.png'
+import memeCover from '../images/meme-cover.png'
 export const certificates =[
     {
         cimg:gdsc,
@@ -149,5 +150,13 @@ export const projects = [
         tech:"HTML | CSS | Javascript | React.js",
         name: "AirBnb Clone web",
         detail:"Airbnb, Inc. is an American company operating an online marketplace for short- and long-term homestays and experiences. The company acts as a broker and charges a commission from each booking."
+        //add note for deploy policy clone web or copyrighted content 
+    },
+    {
+        image:memeCover,
+        link:"https://design-meme.netlify.app/",
+        tech:"HTML | CSS | Javascript | React.js",
+        name: "Meme Generator",
+        detail:"website allow you to to enter custom meme text and add best possible meme image relating to your text"
     }
 ]
