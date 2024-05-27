@@ -14,6 +14,7 @@ import passengerCounter from '../images/passenger-counter.jpg'
 import leadTracker from  '../images/lead-tracker.jpg'
 import airbnbLogo from '../images/airbnb-logo.png'
 import memeCover from '../images/meme-cover.png'
+import quizCover from '../images/quiz.png'
 export const certificates =[
     {
         cimg:gdsc,
@@ -79,6 +80,14 @@ export const projects = [
         detail:"This website provide fascillity to store your documents digitally online and access from any where "
     },
     {
+        image:quizCover,
+        link:"https://myquiz-world.netlify.app/",
+        tech:"HTML | CSS | Javascript",
+        name:"Quiz Website",
+        detail:"This mini website let you to selet the answer and give the result as score."
+        
+    },
+    {
         image:docvaultImg,
         link:"https://imagefy.netlify.app/",
         tech:"HTML | CSS | Javascript ",
@@ -99,14 +108,6 @@ export const projects = [
         tech:"HTML | CSS | Javascript",
         name:"To do app",
         detail:"This web App will allow you to make/edit/delete/mark/save the task list"
-    },
-    {
-        image:docvaultImg,
-        link:"https://myquiz-world.netlify.app/",
-        tech:"HTML | CSS | Javascript",
-        name:"Quiz Website",
-        detail:"lorem"
-        
     },
     {
         image:docvaultImg,
