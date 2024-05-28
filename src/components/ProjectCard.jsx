@@ -2,7 +2,7 @@ import React from "react";
 import '../css/projectcard.css'
 export default function ProjectCard (props) {
     return (
-        <a className="ProjectCard" href={props.prlink}>
+        <a className="ProjectCard" href={props.prlink} target="_blank" >
              <img className="image" src={props.primage} alt={props.prname} />
             {/* <div className="project">
                 <iframe src={props.prlink} frameborder="0"></iframe>

@@ -72,13 +72,13 @@ export const myjourney =[
 ]
 export const projects = [
     {
-        
-        image:docvaultImg,
-        link:"https://government-doc.netlify.app/",
-        tech:"HTML | CSS | Javascript | Firebase | React.js ",
-        name:"Government Doc App",
-        detail:"This website provide fascillity to store your documents digitally online and access from any where "
+        image:memeCover,
+        link:"https://design-meme.netlify.app/",
+        tech:"HTML | CSS | Javascript | React.js",
+        name: "Meme Generator",
+        detail:"website allow you to to enter custom meme text and add best possible meme image relating to your text"
     },
+    
     {
         image:quizCover,
         link:"https://myquiz-world.netlify.app/",
@@ -86,6 +86,13 @@ export const projects = [
         name:"Quiz Website",
         detail:"This mini website let you to selet the answer and give the result as score."
         
+    },{
+        
+        image:docvaultImg,
+        link:"https://government-doc.netlify.app/",
+        tech:"HTML | CSS | Javascript | Firebase | React.js ",
+        name:"Government Doc App",
+        detail:"This website provide fascillity to store your documents digitally online and access from any where "
     },
     {
         image:docvaultImg,
@@ -152,12 +159,5 @@ export const projects = [
         name: "AirBnb Clone web",
         detail:"Airbnb, Inc. is an American company operating an online marketplace for short- and long-term homestays and experiences. The company acts as a broker and charges a commission from each booking."
         //add note for deploy policy clone web or copyrighted content 
-    },
-    {
-        image:memeCover,
-        link:"https://design-meme.netlify.app/",
-        tech:"HTML | CSS | Javascript | React.js",
-        name: "Meme Generator",
-        detail:"website allow you to to enter custom meme text and add best possible meme image relating to your text"
     }
 ]
