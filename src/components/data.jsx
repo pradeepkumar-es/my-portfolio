@@ -15,6 +15,7 @@ import leadTracker from  '../images/lead-tracker.jpg'
 import airbnbLogo from '../images/airbnb-logo.png'
 import memeCover from '../images/meme-cover.png'
 import quizCover from '../images/quiz.png'
+import soulSyncer from '../images/soul-syncer.jpg'
 export const certificates =[
     {
         cimg:gdsc,
@@ -95,11 +96,19 @@ export const projects = [
         detail:"This website provide fascillity to store your documents digitally online and access from any where "
     },
     {
+        image:soulSyncer,
+        link:"https://soulsyncer.netlify.app/",
+        tech: "HTML | CSS | Javascript | Firebase",
+        name: "Soul Syncer",
+        detail:"Soul Syncer is social media website to let share feeling of your soul with the world."
+
+    },
+    {
         image:docvaultImg,
         link:"https://imagefy.netlify.app/",
         tech:"HTML | CSS | Javascript ",
         name:"Image Slider",
-        detail:"lorem"
+        detail:"lorem Ipsum"
         
     },
     {
@@ -121,7 +130,7 @@ export const projects = [
         link:"https://game-registration.netlify.app/",
         tech:"HTML | CSS | Javascript | Firebase | React.js ",
         name:"Game registration",
-        detail:"lorem"
+        detail:"lorem Ipsum"
     },
     {
         image: blackJack,
