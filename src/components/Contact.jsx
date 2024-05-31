@@ -1,27 +1,128 @@
 import React from 'react'
 import '../css/contact.css'
+// import app from '../../FirebaseConfig'
+// // import { db } from '../../FirebaseConfig';
+// import { 
+//   getFirestore,
+//   addDoc,
+//   collection
+//  } from '../../node_modules/@firebase/firestore';
 import { FaLocationDot } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 function Contact() {
+  // const db= getFirestore(app); //initializing cloud firestore and getting a reference to the service
+
+  //State 
+  const [formData, setFormData] = React.useState({
+    name: "",
+    email: "",
+    subject: "",
+    message: ""
+  })
+
+  // console.log(formData)
+  function handleChange(event) {
+    const { name, value } = event.target //object destructuring
+    setFormData((prevFormData) => (
+      {
+        ...prevFormData,
+        // [event.target.name]: event.target.value
+        [name]: value   //using object destructuring
+      }
+    ))
+  }
+
+
+  const handleSubmit = async (e) => {
+    e.preventDefault(); // to prevent to save it into browser tab 
+    const { name, email, subject, message } = formData;
+    const res = await fetch("https://my-portfolio-a3704-default-rtdb.asia-southeast1.firebasedatabase.app/contactFormData.json",
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(
+          {
+            name,
+            email,
+            subject,
+            message
+          }
+        )
+      }
+    )
+      .then((res) => {
+        setFormData(
+          {
+            name: "",
+            email: "",
+            subject: "",
+            message: ""
+          }
+        )
+        alert("Your Message Sent Successfully! I will response you soon.")
+      })
+      .catch((error) => console.error(error.mesage))
+  }
+
   return (
     <div className='contact'>
       <div className="contactinfo">
         <h1>Let's Get In Touch</h1>
         <p> I am open to have any suggestion or just to have a chat </p>
-        <p style={{fontSize:"x-large"}}>Address:</p>
-        <p><FaLocationDot/>&nbsp; Hall 5, IIT Kanpur <br />
-         &nbsp; &nbsp;Uttar Pradesh, India</p>
-        
-        <p><a style={{textDecoration:"none"}} href="mailto:pradeepkumariitk22@gmail.com?subject=Contact For&body=Hi Pradeep,"><MdEmail/>&nbsp;pradeepkumariitk22@gmail.com</a></p>
+        <p style={{ fontSize: "x-large" }}>Address:</p>
+        <p><FaLocationDot />&nbsp; Hall 5, IIT Kanpur <br />
+          &nbsp; &nbsp;Uttar Pradesh, India</p>
+
+        <p><a style={{ textDecoration: "none" }} href="mailto:pradeepkumariitk22@gmail.com?subject=Contact For&body=Hi Pradeep,"><MdEmail />&nbsp;pradeepkumariitk22@gmail.com</a></p>
       </div>
       <div className="contactform">
-        <form className='form' action="">
-          <label htmlFor="name"> Name <br /><input type='text' name="name" id="name" placeholder='Your Name'required/></label>
-          <label htmlFor="email"> Email <br /><input type='email' name='email' id='email' placeholder='Your Email'required/></label>
-          <label htmlFor="subject"> Subject <br /><input type="text" name='subject' id='subject' placeholder='Message Subject' required/></label>
-          <label htmlFor="message"> Message <br /><textarea placeholder='type here...' name="message" id="message" rows="10"></textarea>
+        {/* <form className='form' onClick={handleSubmit} > */}
+        <form className='form' action='Post'>
+          <label htmlFor="name"> Name <br />
+            <input
+              type='text'
+              name="name"
+              id="name"
+              value={formData.name}
+              onChange={handleChange}
+              placeholder='Your Name'
+              required />
           </label>
-          <button onClick={()=>(alert("This is not working, soon it will also work. sorry! for inconvenience"))} >Send Message</button>
+
+          <label htmlFor="email"> Email <br />
+            <input
+              type='email'
+              name='email'
+              id='email'
+              value={formData.email}
+              onChange={handleChange}
+              placeholder='Your Email'
+              required />
+          </label>
+
+          <label htmlFor="subject"> Subject <br />
+            <input
+              type="text"
+              name='subject'
+              id='subject'
+              value={formData.subject}
+              onChange={handleChange}
+              placeholder='Message Subject'
+              required />
+          </label>
+
+          <label htmlFor="message"> Message <br />
+            <textarea
+              placeholder='type here...'
+              name="message"
+              id="message"
+              value={formData.message}
+              onChange={handleChange}
+              rows="10"></textarea>
+          </label>
+          <button type="submit" onClick={handleSubmit} >Send Message</button>
         </form>
       </div>
     </div>
