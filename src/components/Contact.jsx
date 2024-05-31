@@ -1,17 +1,8 @@
 import React from 'react'
 import '../css/contact.css'
-// import app from '../../FirebaseConfig'
-// // import { db } from '../../FirebaseConfig';
-// import { 
-//   getFirestore,
-//   addDoc,
-//   collection
-//  } from '../../node_modules/@firebase/firestore';
 import { FaLocationDot } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 function Contact() {
-  // const db= getFirestore(app); //initializing cloud firestore and getting a reference to the service
-
   //State 
   const [formData, setFormData] = React.useState({
     name: "",
@@ -33,10 +24,13 @@ function Contact() {
   }
 
 
+//<=====  Sending data to firebase console  ======>
+  
   const handleSubmit = async (e) => {
     e.preventDefault(); // to prevent to save it into browser tab 
     const { name, email, subject, message } = formData;
-    const res = await fetch("https://my-portfolio-a3704-default-rtdb.asia-southeast1.firebasedatabase.app/contactFormData.json",
+    if(name && email && subject && message) {
+    const res = await fetch("https://my-portfolio-a3704-default-rtdb.asia-southeast1.firebasedatabase.app/contactFormData.json", //contactFormData.json added later
       {
         method: "POST",
         headers: {
@@ -52,7 +46,7 @@ function Contact() {
         )
       }
     )
-      .then((res) => {
+      if(res){
         setFormData(
           {
             name: "",
@@ -62,8 +56,8 @@ function Contact() {
           }
         )
         alert("Your Message Sent Successfully! I will response you soon.")
-      })
-      .catch((error) => console.error(error.mesage))
+    }
+  } alert("Please Fill Your data")
   }
 
   return (
