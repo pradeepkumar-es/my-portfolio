@@ -28,8 +28,12 @@ import { Link } from "react-router-dom";
 // import Navabar from "./Navbar";
 // import MovingElement from "./MovingElement";
 export default function Home() {
-    const maxProjectToShow = 2;
-    const projectToShow = projects.slice(0, maxProjectToShow);
+    // const maxProjectToShow = 2;
+    // const projectToShow = projects.slice(0, maxProjectToShow);
+
+    // Duplicate the projects array to create an infinite loop effect
+    const allProjects = [...projects, ...projects];
+    console.log(allProjects)
     return (
         <>
             <div className="home">
@@ -44,17 +48,17 @@ export default function Home() {
                         <p >Hey! I am Pradeep, currently pursuing my undergraduate studies at the IIT, Kanpur. As a keen interest in technology to solve real-world challenges, I am deeply immersed in the world of web development. </p>
                         {/* <div className="message-me"> */}
 
-                            {/* <a href="mailto:pradeepkumariitk22@gmail.com?subject=Contact For &body=Hi Pradeep,%20I"><p>Contact Me</p></a> */}
-                            {/* <div className="social-icons"> */}
-                            {/* <img className="web" src={webIcon} alt="contact through website" /> */}
-                            {/* <img className="linkedin" src={linkedinIcon} alt="contact through linkedin" /> */}
-                            {/* <img className="email" src={mailIcon} alt="contact through Email" /> */}
-                            {/* <IoIosArrowRoundForward className="arrow"/> */}
+                        {/* <a href="mailto:pradeepkumariitk22@gmail.com?subject=Contact For &body=Hi Pradeep,%20I"><p>Contact Me</p></a> */}
+                        {/* <div className="social-icons"> */}
+                        {/* <img className="web" src={webIcon} alt="contact through website" /> */}
+                        {/* <img className="linkedin" src={linkedinIcon} alt="contact through linkedin" /> */}
+                        {/* <img className="email" src={mailIcon} alt="contact through Email" /> */}
+                        {/* <IoIosArrowRoundForward className="arrow"/> */}
 
-                            {/* <a href="mailto:pradeepkumariitk22@gmail.com?subject=Contact For &body=Hi Pradeep,%20I"><IoMdMail className="email"/></a> */}
-                            {/* <a href="https://www.linkedin.com/in/pradeepkumar-es/"><FaLinkedin className="linkedin" /></a> */}
-                            {/* <a href="#"><FaGlobe className="web"/></a> */}
-                            {/* </div> */}
+                        {/* <a href="mailto:pradeepkumariitk22@gmail.com?subject=Contact For &body=Hi Pradeep,%20I"><IoMdMail className="email"/></a> */}
+                        {/* <a href="https://www.linkedin.com/in/pradeepkumar-es/"><FaLinkedin className="linkedin" /></a> */}
+                        {/* <a href="#"><FaGlobe className="web"/></a> */}
+                        {/* </div> */}
                         {/* </div> */}
                     </div>
                     <div className="profile">
@@ -72,9 +76,10 @@ export default function Home() {
                         </div>
                         <div className="jcard">
                             {
-                                myjourney.map((data) => {
+                                myjourney.map((data,index) => {
                                     return (
                                         <MYJourney
+                                            key={index}
                                             jlogo={data.logo}
                                             jname={data.name}
                                             jdetail={data.detail}
@@ -87,26 +92,45 @@ export default function Home() {
                     </div>
                 </div>
                 <div className="skills">
-                <h1>< GrUserExpert  style={{ width: "2.5rem", height: "2.5rem" }} />&nbsp;My Skills</h1>
-                <div className="skillContainer">
-                <div>HTML</div>
-                <div>CSS</div>
-                <div>Javascript</div>
-                <div>React.js</div>
-                <div>Bootstrap</div>
-                <div>Firebase</div>
-                <div>Google Cloud</div>
-                </div>
+                    <h1>< GrUserExpert style={{ width: "2.5rem", height: "2.5rem" }} />&nbsp;My Skills</h1>
+                    <div className="skillContainer">
+                        <div>HTML</div>
+                        <div>CSS</div>
+                        <div>Javascript</div>
+                        <div>React.js</div>
+                        <div>Bootstrap</div>
+                        <div>Firebase</div>
+                        <div>Google Cloud</div>
+                    </div>
                 </div>
                 <div className="myproject">
-                <h1><GoProjectSymlink style={{ width: "2.5rem", height: "2.5rem" }} />&nbsp;Projects Prototype</h1>
+                    <h1><GoProjectSymlink style={{ width: "2.5rem", height: "2.5rem" }} />&nbsp;Projects Prototype</h1>
                     <div id="projects" className="myprojects">
-                        
+
                         {
-                            projectToShow.map((data) => {
+                            // projectToShow.map((data) => {
+                            projects.map((data,index) => {
                                 return (
                                     <>
                                         <ProjectCard
+                                            key={index}
+                                            primage={data.image}
+                                            prname={data.name}
+                                            prlink={data.link}
+                                            prtech={data.tech}
+                                            prdetail={data.detail}
+                                        />
+                                    </>
+                                )
+                            })
+                        }
+                        {
+                            // projectToShow.map((data) => {
+                            projects.map((data,index) => {
+                                return (
+                                    <>
+                                        <ProjectCard
+                                            key={index}
                                             primage={data.image}
                                             prname={data.name}
                                             prlink={data.link}
@@ -118,16 +142,17 @@ export default function Home() {
                             })
                         }
                     </div>
-                    <button className="load-project" >
-                       <Link to='/projects'>Load More Projects</Link> </button>
+                    {/* <button className="load-project" >
+                        <Link to='/projects'>Load More Projects</Link> </button> */}
                 </div>
                 <div className="certification">
                     <h1><PiCertificateBold style={{ width: "2.5rem", height: "2.5rem" }} /> &nbsp; Certifications</h1> {/*&nbsp; => non breaking space */}
                     <div className="certificates">
                         {
-                            certificates.map((data) => {
+                            certificates.map((data,index) => {
                                 return (
                                     <Certifications
+                                        key={index}
                                         cimg={data.cimg}
                                         cname={data.name}
                                     />

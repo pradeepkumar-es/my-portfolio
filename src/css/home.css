@@ -174,14 +174,36 @@
     align-items: center;
     flex-direction: column;
     flex-grow: 1;
+    width: 100%; /*seeting as per requirement of projects*/
+    overflow: hidden; /*To stop making of scroll bar*/
+}
+.home{
+    overflow-x: hidden;
 }
 .home .myprojects{
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+   
+    /* white-space: nowrap; */
     justify-content: center;
     align-items: center;
     gap: 2rem;
+    /*animation part*/
+    flex-shrink: 0;
+    height: auto;
+    flex-wrap:nowrap;
+    animation: scrollProjects 50s linear infinite;
+}
+@keyframes scrollProjects{
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translate(-42%); /*to left*/
+    }
+}
+.home .myprojects:hover{
+    animation-play-state:paused;
 }
 .home .myproject h1{
     text-align: center;
