@@ -26,6 +26,12 @@ body {
   /* padding:0px 0px 0px 0px; */
   /* box-shadow: 1px 0px 15px var(--sub-heading-color); */
 }
+
+/* Change this to whatever you want for the active link */
+.active-link{
+  font-weight: bold;
+  border-bottom: 2px solid var(--sub-heading-color);
+}
 .nav .menu-link ul{
   display: flex;
   flex-direction: row;

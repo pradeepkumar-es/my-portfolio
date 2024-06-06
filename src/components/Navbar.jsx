@@ -4,7 +4,9 @@ import { RxCross1, RxSize } from "react-icons/rx"
 import { MdHeight, MdOutlineLightMode } from "react-icons/md";
 import { MdOutlineDarkMode } from "react-icons/md";
 import "../css/navbar.css"
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom'; /*NavLink is a special version of the Link component from 
+react-router-dom that can apply styling based on whether the link is active (i.e., the current URL matches the link's target URL). */
+// import { Link } from 'react-router-dom';
 export default function Navabar() {
     const [openMenu, setOpenMenu] = useState(true);
     const [mode, setMode] =useState(true);
@@ -26,12 +28,12 @@ export default function Navabar() {
                 <div className="logo"><h2><span>M</span>Y <span>P</span>ORTFOLIO</h2></div>
                 <div className="menu-link">
                     <ul>
-                        <li> <Link className='home' to="/">Home</Link> </li>
+                        <li> <NavLink className={({isActive})=>(isActive?'active-link':'home')} to="/">Home</NavLink> </li>
                         {/* <li> <Link to="/aboutme">About Me</Link> </li> */}
                         {/* <li> <a href='#aboutme'>About Me</a> </li> */}
-                        <li><Link to="/projects">My Projects</Link></li>
+                        <li><NavLink className={({isActive})=>(isActive?'active-link':'')} to="/projects">My Projects</NavLink></li>
                         {/* <li><a href="#projects">My Projects</a></li> */}
-                        <li><Link to="/contact">Contact Me</Link></li>
+                        <li><NavLink className={({isActive})=>(isActive? 'active-link':'')} to="/contact">Contact Me</NavLink></li>
                     </ul>
                 </div>
                 <div className="mode" onClick={changeMode}>
@@ -43,12 +45,12 @@ export default function Navabar() {
                     <div className={openMenu?"none":"showMenuPart"}>
                         <div className="cross"><RxCross1 onClick={togglemenu} className={openMenu ? 'activate-cross' : 'crossStyle'} /></div>
                         <ul className={openMenu ? 'activate-mobileNavbar' : 'mobileMenuStyle'}>
-                             <Link to="/"><li onClick={togglemenu} className={openMenu?"hideMenuPart":"none"} >Home</li></Link>                     
+                             <NavLink to="/"><li onClick={togglemenu} className={openMenu?"hideMenuPart":"none"} >Home</li></NavLink>                     
                              {/* <Link to="/aboutme"><li onClick={togglemenu} className={openMenu?"hideMenuPart":"none"} >About Me</li></Link> //correct versio */}
                              {/* <a href='#aboutme'><li onClick={togglemenu} className={openMenu?"hideMenuPart":"none"} >About Me</li></a> */}
-                            <Link to="/projects"><li onClick={togglemenu} className={openMenu?"hideMenuPart":"none"}>My Projects</li></Link>
+                            <NavLink to="/projects"><li onClick={togglemenu} className={openMenu?"hideMenuPart":"none"}>My Projects</li></NavLink>
                             {/* <a href="#projects"><li onClick={togglemenu} className={openMenu?"hideMenuPart":"none"}>My Projects</li></a> */}
-                            <Link to="/contact"><li onClick={togglemenu} className={openMenu?"hideMenuPart":"none"}>Contact Me</li></Link>
+                            <NavLink to="/contact"><li onClick={togglemenu} className={openMenu?"hideMenuPart":"none"}>Contact Me</li></NavLink>
                         </ul>
                     </div>
                 </div>
