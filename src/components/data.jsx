@@ -39,6 +39,13 @@ export const myjourney =[
 
     },
     {
+        logo:biosociitklogo,
+        name:"BioSoc, IIT Kanpur",
+        detail:"WEB Coordinator",
+        period:"(2024-25)"
+
+    },
+    {
         logo:umlogo,
         name:"UNIFIED MENTOR PRIVATE LIMITED",
         detail:"WEB Development Intern",
