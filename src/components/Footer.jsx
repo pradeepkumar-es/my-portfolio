@@ -10,9 +10,9 @@ export default function Footer(){
                 <div className="social-link">
                     <ul>
                         {/* <li>Connect with me</li> */}
-                        <li><a href="https://www.instagram.com/pradeepkumar.es/" target='_blank'><FaInstagram /></a></li>
-                        <li><a href="https://www.linkedin.com/in/pradeepkumar-es/" target='_blank' ><FaLinkedin /></a></li>
-                        <li><a href="https://www.facebook.com/pradeepkumar.es/" target='_blank' ><FaFacebook /></a></li>
+                        <li title='Instagram'><a href="https://www.instagram.com/pradeepkumar.es/" target='_blank'><FaInstagram /></a></li>
+                        <li title='Linkedin'><a href="https://www.linkedin.com/in/pradeepkumar-es/" target='_blank' ><FaLinkedin /></a></li>
+                        <li title='Facebook'><a href="https://www.facebook.com/pradeepkumar.es/" target='_blank' ><FaFacebook /></a></li>
                     </ul>
                 </div>
             </div>

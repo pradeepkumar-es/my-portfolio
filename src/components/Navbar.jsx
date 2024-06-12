@@ -25,7 +25,8 @@ export default function Navabar() {
      return (
         <>
             <div className="nav">
-                <div className="logo"><h2><span>M</span>Y <span>P</span>ORTFOLIO</h2></div>
+                {/* <div className="logo"><h2><span>M</span>Y <span>P</span>ORTFOLIO</h2></div> */} {/* using span we increase the size of letter */}
+                <div className="logo"><h2>My Portfolio</h2></div> {/* using styling and applying font-variant:small-caps to convert to uppercase and converted letter will have lower font size then original uppercase letter*/}
                 <div className="menu-link">
                     <ul>
                         <li> <NavLink className={({isActive})=>(isActive?'active-link':'home')} to="/">Home</NavLink> </li>
@@ -36,7 +37,7 @@ export default function Navabar() {
                         <li><NavLink className={({isActive})=>(isActive? 'active-link':'')} to="/contact">Contact Me</NavLink></li>
                     </ul>
                 </div>
-                <div className="mode" onClick={changeMode}>
+                <div title='Toggle The Mode' className="mode" onClick={changeMode}> {/* Title attribute will show extra information about element tag on hover */}
                     {mode?<MdOutlineLightMode className='lightMode' />:<MdOutlineDarkMode className='darkMode' />}
                 </div>
                 

@@ -9,6 +9,7 @@
 }
 .projectpage h1{
     padding-top: 3rem;
+    font-variant:small-caps; /*This will captitalize and set the first letter to bigger*/
 }
 .projectpage .projectlist{
     padding: 4rem;

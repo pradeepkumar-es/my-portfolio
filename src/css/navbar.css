@@ -68,6 +68,9 @@ body {
   padding-top: 1px;
   color: rgb(224, 244, 247);
   font-family: Georgia, "Times New Roman", Times, serif;
+  font-variant: small-caps; /*to convert all letter in upper case, here converted letter size will be smaller than that of original uppercase letter*/
+  padding-top: 5px;
+  padding-left: 2px;
 }
 .nav .logo h2 span {
   font-size: 150%;

@@ -101,6 +101,7 @@ export default function Home() {
                         <div>Bootstrap</div>
                         <div>Firebase</div>
                         <div>Google Cloud</div>
+                        <div>jQuery</div>
                     </div>
                 </div>
                 <div className="myproject">
