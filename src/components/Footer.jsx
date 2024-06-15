@@ -1,5 +1,6 @@
 import '../css/footer.css'
-import { FaInstagram, FaLinkedin, FaFacebook } from "react-icons/fa";
+import { FaInstagram, FaLinkedin, FaFacebook, FaGithub } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 export default function Footer(){
     return(
         <>
@@ -13,6 +14,8 @@ export default function Footer(){
                         <li title='Instagram'><a href="https://www.instagram.com/pradeepkumar.es/" target='_blank'><FaInstagram /></a></li>
                         <li title='Linkedin'><a href="https://www.linkedin.com/in/pradeepkumar-es/" target='_blank' ><FaLinkedin /></a></li>
                         <li title='Facebook'><a href="https://www.facebook.com/pradeepkumar.es/" target='_blank' ><FaFacebook /></a></li>
+                        <li title='X'><a href="https://x.com/pradeepkumar_es" target='_blank' ><FaXTwitter /></a></li>
+                        <li title='Github'><a href="https://github.com/pradeepkumar-es" target='_blank' >< FaGithub /></a></li>
                     </ul>
                 </div>
             </div>
