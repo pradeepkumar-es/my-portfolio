@@ -30,34 +30,34 @@ function Contact() {
     e.preventDefault(); // to prevent to save it into browser tab 
     const { name, email, subject, message } = formData;
     if(name && email && subject && message) {
-    const res = await fetch("https://my-portfolio-a3704-default-rtdb.asia-southeast1.firebasedatabase.app/contactFormData.json", //contactFormData.json added later
-      {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(
-          {
-            name,
-            email,
-            subject,
-            message
-          }
-        )
+      const res = await fetch("https://my-portfolio-a3704-default-rtdb.asia-southeast1.firebasedatabase.app/contactFormData.json", //contactFormData.json added later
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(
+            {
+              name,
+              email,
+              subject,
+              message
+            }
+          )
+        }
+      )
+        if(res){
+          setFormData(
+            {
+              name: "",
+              email: "",
+              subject: "",
+              message: ""
+            }
+          )
+          alert("Thankyou, Your Message Sent Successfully! I will response you soon.")
       }
-    )
-      if(res){
-        setFormData(
-          {
-            name: "",
-            email: "",
-            subject: "",
-            message: ""
-          }
-        )
-        alert("Your Message Sent Successfully! I will response you soon.")
-    }
-  } alert("Please Fill Your data")
+    } else alert("Please Fill Your data")
   }
 
   return (

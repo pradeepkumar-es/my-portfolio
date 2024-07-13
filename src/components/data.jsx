@@ -107,7 +107,7 @@ export const projects = [
         link:"https://soulsyncer.netlify.app/",
         tech: "HTML | CSS | Javascript | Firebase",
         name: "Soul Syncer",
-        detail:"Soul Syncer is social media website to let share feeling of your soul with the world."
+        detail:"Soul Syncer is like social media website to let share and keep record of feeling of your soul privately."
 
     },
     {

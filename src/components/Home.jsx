@@ -43,7 +43,7 @@ export default function Home() {
                     <h1> Pradeep</h1> */}
                         <h1>Elevating Brands Through Innovative Web Solutions</h1>
                         <img id="pradeep-profile" src={pradeepProfile} alt="Profile of Pradeep" />
-                        <h3>WEB DEVELOPER & DESIGNER<div className="shdash"></div></h3>
+                        <h3>WEB DEVELOPER<div className="shdash"></div></h3>
                         {/* <h1 id="aboutme">Elevating Brands Through Innovative Web Solutions</h1> */}
                         <p >Hey! I am Pradeep, currently pursuing my undergraduate studies at the IIT, Kanpur. As a keen interest in technology to solve real-world challenges, I am deeply immersed in the world of web development. </p>
                         {/* <div className="message-me"> */}
@@ -102,6 +102,7 @@ export default function Home() {
                         <div>Firebase</div>
                         <div>Google Cloud</div>
                         <div>jQuery</div>
+                        <div>Java</div>
                     </div>
                 </div>
                 <div className="myproject">
