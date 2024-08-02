@@ -84,7 +84,7 @@ export const projects = [
         link:"https://design-meme.netlify.app/",
         tech:"HTML | CSS | Javascript | React.js",
         name: "Meme Generator",
-        detail:"website allow you to to enter custom meme text and add best possible meme image relating to your text"
+        detail:"website allow you to to enter custom meme text, add best possible meme image relating to your text and download your created meme image"
     },
     
     {
