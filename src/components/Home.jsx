@@ -97,7 +97,8 @@ export default function Home() {
                         <div>HTML</div>
                         <div>CSS</div>
                         <div>Javascript</div>
-                        <div>React.js</div>
+                        <div>ReactJS</div>
+                        <div>NextJS</div>
                         <div>Bootstrap</div>
                         <div>Firebase</div>
                         <div>Google Cloud</div>
