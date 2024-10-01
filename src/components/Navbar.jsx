@@ -26,7 +26,7 @@ export default function Navabar() {
         <>
             <div className="nav">
                 {/* <div className="logo"><h2><span>M</span>Y <span>P</span>ORTFOLIO</h2></div> */} {/* using span we increase the size of letter */}
-                <div className="logo"><h2>My Portfolio</h2></div> {/* using styling and applying font-variant:small-caps to convert to uppercase and converted letter will have lower font size then original uppercase letter*/}
+                <div className="logo"><h2>Pradeep Kumar</h2></div> {/* using styling and applying font-variant:small-caps to convert to uppercase and converted letter will have lower font size then original uppercase letter*/}
                 <div className="menu-link">
                     <ul>
                         <li> <NavLink className={({isActive})=>(isActive?'active-link':'home')} to="/">Home</NavLink> </li>

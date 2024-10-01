@@ -41,11 +41,11 @@ export default function Home() {
                     <div className="about">
                         {/* <h2>Hello,  I'm</h2>
                     <h1> Pradeep</h1> */}
-                        <h1>Elevating Brands Through Innovative Web Solutions</h1>
+                        <h1>Bringing Visions To Life Through Code</h1>
                         <img id="pradeep-profile" src={pradeepProfile} alt="Profile of Pradeep" />
-                        <h3>WEB DEVELOPER<div className="shdash"></div></h3>
+                        <h3>Front-End Developer | Web Enthusiast<div className="shdash"></div></h3>
                         {/* <h1 id="aboutme">Elevating Brands Through Innovative Web Solutions</h1> */}
-                        <p >Hey! I am Pradeep, currently pursuing my undergraduate studies at the IIT, Kanpur. As a keen interest in technology to solve real-world challenges, I am deeply immersed in the world of web development. </p>
+                        <p >Hey! I’m Pradeep, an undergraduate at IIT Kanpur, with a strong focus on using technology to solve real-world challenges. I love bringing designs to life with clean, responsive, and user-friendly code that drives impact.</p>
                         {/* <div className="message-me"> */}
 
                         {/* <a href="mailto:pradeepkumariitk22@gmail.com?subject=Contact For &body=Hi Pradeep,%20I"><p>Contact Me</p></a> */}
@@ -69,7 +69,7 @@ export default function Home() {
                     <Highlights />
                 </div>
                 <div className="journey">
-                    <h1><GiJourney style={{ width: "2.5rem", height: "2.5rem" }} /> &nbsp;Academic Journey</h1>
+                    <h1><GiJourney style={{ width: "2.5rem", height: "2.5rem" }} /> &nbsp;My Journey</h1>
                     <div className="journeySection">
                         <div className="path">
                             {/* <MovingElement/> */}

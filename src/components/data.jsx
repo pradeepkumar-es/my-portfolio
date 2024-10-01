@@ -1,11 +1,12 @@
 import gdsc from '../images/gdsc-certificate.jpg'
 import genai from '../images/GenAI-Certificate.jpg'
 import um from '../images/um-certificate.jpg'
+import polyformlogo from "../images/polyform-logo.png"
 import jnvlogo from '../images/jnv-logo.png'
 import iitklogo from '../images/iitk-logo.png'
 import dakshanalogo from '../images/dakshana-logo.png'
 import umlogo from '../images/um-logo.png'
-import docvaultImg from '../images/docvault.png'
+import docvaultImg from '../images/doc-storage.jpeg'
 import biosociitklogo from '../images/biosociitk-logo.png'
 import toDo from '../images/to-do.jpg'
 import blackJack from '../images/black-jack.jpg'
@@ -16,6 +17,9 @@ import airbnbLogo from '../images/airbnb-logo.png'
 import memeCover from '../images/meme-cover.png'
 import quizCover from '../images/quiz.png'
 import soulSyncer from '../images/soul-syncer.jpg'
+import gameRegistration from '../images/game-registration.jpeg'
+import appointment from '../images/appointment.jpeg'
+import imageSlider from '../images/image-slider.jpeg'
 export const certificates =[
     {
         cimg:gdsc,
@@ -31,6 +35,12 @@ export const certificates =[
     }
 ]
 export const myjourney =[
+    {
+        logo:polyformlogo,
+        name:"Polyform AI",
+        detail:"Front End Engineer",
+        period:"(2024-Present)"
+    },
     {
         logo:iitklogo,
         name:"Indian Institute of Technology, Kanpur",
@@ -89,17 +99,17 @@ export const projects = [
     
     {
         image:quizCover,
-        link:"https://myquiz-world.netlify.app/",
-        tech:"HTML | CSS | Javascript",
+        link:"https://myquizworld.netlify.app/",
+        tech:"HTML | CSS | Javascript | React",
         name:"Quiz Website",
-        detail:"This mini website let you to selet the answer and give the result as score."
+        detail:"Website let you to select the answer and give the result as score."
         
     },{
         
         image:docvaultImg,
         link:"https://government-doc.netlify.app/",
         tech:"HTML | CSS | Javascript | Firebase | React.js ",
-        name:"Government Doc App",
+        name:"File Storage Web App",
         detail:"This website provide fascillity to store your documents digitally online and access from any where "
     },
     {
@@ -111,7 +121,7 @@ export const projects = [
 
     },
     {
-        image:docvaultImg,
+        image:imageSlider,
         link:"https://imagefy.netlify.app/",
         tech:"HTML | CSS | Javascript ",
         name:"Image Slider",
@@ -119,7 +129,7 @@ export const projects = [
         
     },
     {
-        image:docvaultImg,
+        image:appointment,
         link:"https://appointeduhub.netlify.app/",
         tech:"HTML | CSS | Javascript | Firebase | React.js ",
         name:"Appoint Edu Hub",
@@ -133,7 +143,7 @@ export const projects = [
         detail:"This web App will allow you to make/edit/delete/mark/save the task list"
     },
     {
-        image:docvaultImg,
+        image:gameRegistration,
         link:"https://game-registration.netlify.app/",
         tech:"HTML | CSS | Javascript | Firebase | React.js ",
         name:"Game registration",
