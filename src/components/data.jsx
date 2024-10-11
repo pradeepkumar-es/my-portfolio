@@ -38,7 +38,7 @@ export const myjourney =[
     {
         logo:polyformlogo,
         name:"Polyform AI",
-        detail:"Front End Engineer",
+        detail:"Front End Engineer Intern",
         period:"(2024-Present)"
     },
     {

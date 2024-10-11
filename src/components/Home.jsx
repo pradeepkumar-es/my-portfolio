@@ -97,6 +97,7 @@ export default function Home() {
                         <div>HTML</div>
                         <div>CSS</div>
                         <div>Javascript</div>
+                        <div>Typescript</div>
                         <div>ReactJS</div>
                         <div>NextJS</div>
                         <div>Bootstrap</div>
