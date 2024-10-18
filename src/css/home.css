@@ -6,6 +6,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    background:linear-gradient(to right, var(--bg-color), var(--bg2-color) );
     /* position: inherit; */
     /* z-index: 1; */
     /* padding:0px 10px 10px 10px; */
@@ -29,7 +30,8 @@
     background-size: cover;
     background-position: center;
     flex-grow: 1;
-    
+    background-color: transparent;
+    /* background: transparent; */
 }
 @media only screen and (max-width:989px) {
     .home .introduction{
@@ -139,12 +141,14 @@
 } */
 .home .journey {
     margin-top: 40px;
+    background: transparent;
 }
 .home .journey .journeySection{
     display:grid;
     grid-template-columns:1fr 25fr;
     grid-row-start: 1;
     grid-row-end:auto;
+    background: transparent;
 }
 .home .journeySection .path{
     border: 1px solid red;
@@ -152,15 +156,20 @@
 .home .journeySection .jcard{
     border: 1px solid green;
 }
+.journeySection div{
+    background-color: transparent;
+}
 .home .skills{
     margin:40px auto;
     text-align: center;
+    background: transparent;
 }
 .home .skillContainer{
     display: flex;
     flex-wrap: wrap;
     gap: 8px;
     margin-top: 5px;
+    background: transparent;
 }
 .home .skillContainer > div{
     background-color: white;
@@ -180,6 +189,7 @@
     flex-grow: 1;
     width: 100%; /*seeting as per requirement of projects*/
     overflow: hidden; /*To stop making of scroll bar*/
+    background: transparent;
 }
 .home{
     overflow-x: hidden;
@@ -187,7 +197,7 @@
 .home .myprojects{
     display: flex;
     flex-direction: row;
-   
+    background: transparent;
     /* white-space: nowrap; */
     justify-content: center;
     align-items: center;
@@ -232,6 +242,7 @@
     margin: auto;
     text-align: center;
     margin-top: 3rem;
+    background: transparent;
 }
 .home .certification h1, .home .journey h1 {
     /* text-decoration: underline; */
@@ -247,6 +258,7 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    background: transparent;
     
 }
 @media only screen and (max-width:768px){

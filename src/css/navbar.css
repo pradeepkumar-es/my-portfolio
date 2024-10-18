@@ -20,6 +20,7 @@ body {
   width: 100%;
   padding: 0;
   margin: 0;
+  background:linear-gradient(to right, var(--bg-color), var(--bg2-color) );
   /* border-bottom: .001rem solid var(--sub-heading-color); */
   /* padding-top: 10px; */
   /* padding-bottom: 0px; */
@@ -31,6 +32,9 @@ body {
 .active-link{
   font-weight: bold;
   border-bottom: 2px solid var(--sub-heading-color);
+}
+.nav .menu-link{
+  background: transparent;
 }
 .nav .menu-link ul{
   display: flex;
@@ -64,6 +68,9 @@ body {
   text-decoration: none;
   color: var(--icon-color);
 }
+.nav .menu-link .home{
+  background: transparent;
+}
 .nav .logo {
   padding-top: 1px;
   color: rgb(224, 244, 247);
@@ -71,6 +78,7 @@ body {
   font-variant: small-caps; /*to convert all letter in upper case, here converted letter size will be smaller than that of original uppercase letter*/
   padding-top: 5px;
   padding-left: 2px;
+  background: transparent;
 }
 .nav .logo h2 span {
   font-size: 150%;
@@ -78,7 +86,11 @@ body {
   color: var(--text-color);
   /* padding-bottom: 5px; */
 }
+.mode{
+  background: transparent;
+}
 .nav .mobile-menu {
+  background: transparent;
   display: none;
 }
 .nav .mobile-menu .activate-cross,
@@ -124,7 +136,6 @@ body {
     /* margin-bottom: 10rem; */
     position: fixed;
     top: -1px;
-    right: 3px;
     width: 227px;
     /* height: 100%; */
     transition: left 0.5s ease;

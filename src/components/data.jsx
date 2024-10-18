@@ -34,32 +34,18 @@ export const certificates =[
         name:"Web Development Internship Certificate"
     }
 ]
-export const myjourney =[
+export const experience=[
     {
         logo:polyformlogo,
         name:"Polyform AI",
-        detail:"Front End Engineer Intern",
+        detail:"Front End Engineering Intern",
         period:"(2024-Present)"
-    },
-    {
-        logo:iitklogo,
-        name:"Indian Institute of Technology, Kanpur",
-        detail:"B.Tech in Biological Sciences and Bioengineering",
-        period:"(2022-26)"
-
     },
     {
         logo:biosociitklogo,
         name:"BioSoc, IIT Kanpur",
         detail:"WEB Coordinator",
-        period:"(2024-25)"
-
-    },
-    {
-        logo:umlogo,
-        name:"UNIFIED MENTOR PRIVATE LIMITED",
-        detail:"WEB Development Intern",
-        period:"(November-December 2023)"
+        period:"(2024-Present)"
 
     },
     {
@@ -67,6 +53,22 @@ export const myjourney =[
         name:"BioSoc, IIT Kanpur",
         detail:"WEB Development Secretary",
         period:"(2023-24)"
+
+    },
+    {
+        logo:umlogo,
+        name:"UNIFIED MENTOR PRIVATE LIMITED",
+        detail:"WEB Development Intern Trainee",
+        period:"(November-December 2023)"
+
+    }
+]
+export const myeducation =[
+    {
+        logo:iitklogo,
+        name:"Indian Institute of Technology, Kanpur",
+        detail:"B.Tech in Biological Sciences and Bioengineering",
+        period:"(2022-Present)"
 
     },
     {
@@ -78,7 +80,7 @@ export const myjourney =[
     {
         logo:dakshanalogo,
         name:"Dakashana Foundation, Lucknow",
-        detail:"Dakshana Scholar",
+        detail:"Dakshana Scholar (JEE)",
         period:"(2019-2021)"
     },
     {

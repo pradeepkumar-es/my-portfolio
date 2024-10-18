@@ -16,14 +16,15 @@ import { IoMdMail } from "react-icons/io";
 import { IoIosArrowRoundForward } from "react-icons/io";
 import { BsDashLg } from "react-icons/bs";
 import { PiCertificateBold } from 'react-icons/pi'
-import { GiJourney } from "react-icons/gi";
-import { certificates, myjourney } from './data'
+import { IoSchool } from "react-icons/io5";
+import { certificates, myeducation, experience } from './data'
 import { RxSize } from "react-icons/rx";
 import MYJourney from "./MyJourney";
 import { projects } from "./data";
 import ProjectCard from "./ProjectCard";
 import { GoProjectSymlink } from "react-icons/go";
 import { GrUserExpert } from "react-icons/gr";
+import { MdWorkHistory } from "react-icons/md";
 import { Link } from "react-router-dom";
 // import Navabar from "./Navbar";
 // import MovingElement from "./MovingElement";
@@ -45,7 +46,7 @@ export default function Home() {
                         <img id="pradeep-profile" src={pradeepProfile} alt="Profile of Pradeep" />
                         <h3>Front-End Developer | Web Enthusiast<div className="shdash"></div></h3>
                         {/* <h1 id="aboutme">Elevating Brands Through Innovative Web Solutions</h1> */}
-                        <p >Hey! I’m Pradeep, an undergraduate at IIT Kanpur, with a strong focus on using technology to solve real-world challenges. I love bringing designs to life with clean, responsive, and user-friendly code that drives impact.</p>
+                        <p >Hey! I’m Pradeep, Pre-Final Year undergraduate Student at IIT Kanpur in the department of Biological Sciences And Bioengineering, with a strong focus on using and exploring technology specially in the domain of Development to solve real-world challenges. I love bringing designs to life with clean, responsive, and user-friendly code that drives impact.</p>
                         {/* <div className="message-me"> */}
 
                         {/* <a href="mailto:pradeepkumariitk22@gmail.com?subject=Contact For &body=Hi Pradeep,%20I"><p>Contact Me</p></a> */}
@@ -69,14 +70,37 @@ export default function Home() {
                     <Highlights />
                 </div>
                 <div className="journey">
-                    <h1><GiJourney style={{ width: "2.5rem", height: "2.5rem" }} /> &nbsp;My Journey</h1>
+                    <h1><MdWorkHistory style={{ width: "2.5rem", height: "2.5rem" }} /> &nbsp;My Experience</h1>
                     <div className="journeySection">
                         <div className="path">
                             {/* <MovingElement/> */}
                         </div>
                         <div className="jcard">
                             {
-                                myjourney.map((data,index) => {
+                                experience.map((data,index) => {
+                                    return (
+                                        <MYJourney
+                                            key={index}
+                                            jlogo={data.logo}
+                                            jname={data.name}
+                                            jdetail={data.detail}
+                                            jperiod={data.period}
+                                        />
+                                    )
+                                })
+                            }
+                        </div>
+                    </div>
+                </div>
+                <div className="journey">
+                    <h1><IoSchool style={{ width: "2.5rem", height: "2.5rem" }} /> &nbsp;My Education</h1>
+                    <div className="journeySection">
+                        <div className="path">
+                            {/* <MovingElement/> */}
+                        </div>
+                        <div className="jcard">
+                            {
+                                myeducation.map((data,index) => {
                                     return (
                                         <MYJourney
                                             key={index}

@@ -4,7 +4,8 @@
   /* margin: 6rem 1rem; */
   padding: 1.5rem;
   /* border-radius: 5px; */
-  background-color: var(--secondary-bg-color);
+  /* background-color: var(--secondary-bg-color); */
+  background:linear-gradient(to right, var(--bg-color), var(--bg2-color) );
   justify-content: center;
   align-items: center;
   min-height:100vh;
@@ -21,7 +22,9 @@
   height: auto;
   text-align: start;
   row-gap: 5px;
-  background-color: var(--secondary-bg-color);
+  background: transparent;
+  /* background-color: var(--secondary-bg-color); */
+  /* background:linear-gradient(to right, var(--bg-color), var(--bg2-color) ); */
   /* color: var(--text-color); */
 }
 .contact .contactinfo h1,
@@ -35,16 +38,18 @@
   max-height: 50%;
   margin-right: 10px;
   border-radius: 5px;
-  box-shadow: 10px 10px 5px brown;
+  /* box-shadow: 10px 10px 5px brown; */
 }
 
 .contact .form {
+  color: var(--text-color);
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   /* align-items: center; */
   padding: 1.5em 2.5em;
-  background-color: rgb(226, 183, 252);
+  /* background-color: rgb(226, 183, 252); */
+  background: linear-gradient(to right, var(--bg-color), var(--bg2-color));
   /* height: 420px; */
   height: auto;
   width: 307px;
@@ -54,7 +59,7 @@
   width: 100%;
 }
 .contact .form button {
-  background-color: rgb(110, 17, 103);
+  background-color: var(--button-color);
   border-radius: 5px;
   border-style: none;
   margin-top: 3px;
@@ -62,12 +67,12 @@
   align-content: center;
   color: white;
   max-height: 200px;
-  max-width: 100%;
+  width: 103%;
   font-size:large;
   font-weight: bold;
 }
 .contact .form button:hover {
-  background-color: rgb(221, 51, 184);
+  background-color: var( --button-hover-color);
   color: rgb(240, 231, 219);
   cursor: pointer;
 }
@@ -75,17 +80,19 @@
 .contact .form #email,
 .contact .form #subject {
   padding: 3px 5px;
-  margin: 1px 0px 10px 0px;
+  margin: 3px 0px 10px 0px;
   height: 38px;
   border-radius: 5px;
   border-style: none;
   border: 0px;
+  width: 100%;
 }
 .contact .form #message {
   padding:5px;
   border-radius: 5px;
-  max-width: 80%;
+  max-width: 100%;
   border-style: none;
+  margin-top: 3px;
 }
 @media only screen and (max-width: 768px) {
   .contact {

@@ -11,23 +11,31 @@
     flex-direction: column;
 }
 .light-Mode{
-    --bg-color:white;
+    /* --bg-color:white; */
+    --bg-color:#abbaab;
+    --bg2-color:#ffffff;
     --main-h1-color:black;
     --text-color:black;
     --icon-color:black;
     --sub-heading-color:rgb(133, 38, 10);
     --footer-color:rgb(221, 213, 213);
     --secondary-bg-color:rgb(136, 195, 223);
-    --boundary-color:#13112b;
+    --boundary-color:#000428;
+    --button-color:rgb(32, 27, 27);
+    --button-hover-color:black;
 }
 .dark-Mode{
-    --bg-color:#13112b;
+    /* --bg-color:#13112b; */
+    --bg-color:#000428;
+    --bg2-color:#004e92;
     --main-h1-color:white;
     --text-color:white;
     --icon-color:white;
     --sub-heading-color:yellow;
     --footer-color:black;
     --secondary-bg-color:rgb(218, 153, 226);
+    --button-color:#008CBA;
+    --button-hover-color:black;
 }
 h1,p,h2,h4{
     color: var(--main-h1-color);
