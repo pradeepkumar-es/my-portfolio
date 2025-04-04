@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Poppins:wght@500;600&display=swap');
+body {
+    font-family: 'Lato', sans-serif; /* Body text */
+  }
+h1, h2, h3, h4 {
+    font-family: 'Poppins', sans-serif; /* Headings */
+  }
 .home{
     /* min-height: 100vh; */
     position:inherit;
@@ -53,6 +60,9 @@
     width: 20rem;
     background-color: var(--sub-heading-color);
 } */
+.home .about .name{
+    font-size:xx-large;
+}
 .introduction .profile{
     background-color: transparent;
 }
@@ -60,7 +70,9 @@
     display: none;
 }
 .introduction .profile .pradeep-profile{
-    max-width:22rem;
+    object-fit: cover;
+    height: 20.8em;
+    width:20em;
     /* position: relative; */
     /* top: 44px; */
     /* z-index: 0; */
@@ -87,7 +99,8 @@
 .introduction p{
     font-size: x-large;
     /* color: white; */
-    font-family:sans-serif;
+    /* font-family:sans-serif; */
+    font-family:'';
 }
    /* .message-me{
     display: flex;
@@ -151,10 +164,11 @@
     background: transparent;
 }
 .home .journeySection .path{
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 .home .journeySection .jcard{
-    border: 1px solid green;
+    padding: 5px;
+    /* border: 1px solid green; */
 }
 .journeySection div{
     background-color: transparent;

@@ -36,32 +36,32 @@ export const certificates =[
 ]
 export const experience=[
     {
+        logo:biosociitklogo,
+        name:"BioSoc, IIT Kanpur",
+        detail:"Web Coordinator",
+        period:"(June'24-Present)"
+
+    },
+    {
         logo:polyformlogo,
         name:"Polyform AI",
         detail:"Front End Engineering Intern",
-        period:"(2024-Present)"
+        period:"(August'24-February'25)"
     },
     {
         logo:biosociitklogo,
         name:"BioSoc, IIT Kanpur",
-        detail:"WEB Coordinator",
-        period:"(2024-Present)"
-
-    },
-    {
-        logo:biosociitklogo,
-        name:"BioSoc, IIT Kanpur",
-        detail:"WEB Development Secretary",
-        period:"(2023-24)"
-
-    },
-    {
-        logo:umlogo,
-        name:"UNIFIED MENTOR PRIVATE LIMITED",
-        detail:"WEB Development Intern Trainee",
-        period:"(November-December 2023)"
+        detail:"Web Development Secretary",
+        period:"(August'23-May'24)"
 
     }
+    //, {
+    //     logo:umlogo,
+    //     name:"UNIFIED MENTOR PRIVATE LIMITED",
+    //     detail:"Web Development Intern Trainee",
+    //     period:"(November-December 2023)"
+
+    // }
 ]
 export const myeducation =[
     {

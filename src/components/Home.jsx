@@ -5,7 +5,7 @@ import Contact from "./Contact";
 import Footer from "./Footer";
 import Highlights from './Highlights'
 import Certifications from "./Certifications";
-import pradeepProfile from "../images/pradeep-pic-nobg.png"
+import pradeepProfile from "../images/pradeep-pic.jpg"
 import webIcon from "../images/web-icon.png"
 import linkedinIcon from "../images/linkedin-icon.png"
 import mailIcon from "../images/mail-icon.png"
@@ -44,9 +44,9 @@ export default function Home() {
                     <h1> Pradeep</h1> */}
                         <h1>Bringing Visions To Life Through Code</h1>
                         <img id="pradeep-profile" src={pradeepProfile} alt="Profile of Pradeep" />
-                        <h3>Front-End Developer | Web Enthusiast<div className="shdash"></div></h3>
+                        <h3 className="name">Pradeep Kumar<div className="shdash"></div></h3>
                         {/* <h1 id="aboutme">Elevating Brands Through Innovative Web Solutions</h1> */}
-                        <p >Hey! I’m Pradeep, Pre-Final Year undergraduate Student at IIT Kanpur in the department of Biological Sciences And Bioengineering, with a strong focus on using and exploring technology specially in the domain of Development to solve real-world challenges. I love bringing designs to life with clean, responsive, and user-friendly code that drives impact.</p>
+                        <p >Pre-final year undergrad at IIT Kanpur (BSBE) with a deep passion for web and software development. I blend clean code with thoughtful design to build responsive, user-friendly experiences. Currently exploring backend dev & DSA. Let’s build something impactful!</p>
                         {/* <div className="message-me"> */}
 
                         {/* <a href="mailto:pradeepkumariitk22@gmail.com?subject=Contact For &body=Hi Pradeep,%20I"><p>Contact Me</p></a> */}
@@ -70,7 +70,7 @@ export default function Home() {
                     <Highlights />
                 </div>
                 <div className="journey">
-                    <h1><MdWorkHistory style={{ width: "2.5rem", height: "2.5rem" }} /> &nbsp;My Experience</h1>
+                    <h1><MdWorkHistory style={{ width: "2.5rem", height: "2.5rem" }} /> &nbsp;Work Experience</h1>
                     <div className="journeySection">
                         <div className="path">
                             {/* <MovingElement/> */}
@@ -93,7 +93,7 @@ export default function Home() {
                     </div>
                 </div>
                 <div className="journey">
-                    <h1><IoSchool style={{ width: "2.5rem", height: "2.5rem" }} /> &nbsp;My Education</h1>
+                    <h1><IoSchool style={{ width: "2.5rem", height: "2.5rem" }} /> &nbsp;Education</h1>
                     <div className="journeySection">
                         <div className="path">
                             {/* <MovingElement/> */}
@@ -116,7 +116,7 @@ export default function Home() {
                     </div>
                 </div>
                 <div className="skills">
-                    <h1>< GrUserExpert style={{ width: "2.5rem", height: "2.5rem" }} />&nbsp;My Skills</h1>
+                    <h1>< GrUserExpert style={{ width: "2.5rem", height: "2.5rem" }} />&nbsp;Skills</h1>
                     <div className="skillContainer">
                         <div>HTML</div>
                         <div>CSS</div>
@@ -173,8 +173,9 @@ export default function Home() {
                     {/* <button className="load-project" >
                         <Link to='/projects'>Load More Projects</Link> </button> */}
                 </div>
-                <div className="certification">
-                    <h1><PiCertificateBold style={{ width: "2.5rem", height: "2.5rem" }} /> &nbsp; Certifications</h1> {/*&nbsp; => non breaking space */}
+                 {/*&nbsp; => non breaking space */}
+                {/* <div className="certification">
+                    <h1><PiCertificateBold style={{ width: "2.5rem", height: "2.5rem" }} /> &nbsp; Certifications</h1>
                     <div className="certificates">
                         {
                             certificates.map((data,index) => {
@@ -188,7 +189,7 @@ export default function Home() {
                             })
                         }
                     </div>
-                </div>
+                </div>  */}
             </div>
         </>
     )
