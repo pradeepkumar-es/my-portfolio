@@ -19,7 +19,7 @@ export default function Footer(){
                     </ul>
                 </div>
             </div>
-            <p>&copy; 2024 Pradeep Kumar. All Rights Reserved</p>
+            <p>&copy; 2025 Pradeep Kumar. All Rights Reserved</p>
         </div>
         </>
     )

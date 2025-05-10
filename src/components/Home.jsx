@@ -129,6 +129,10 @@ export default function Home() {
                         <div>Google Cloud</div>
                         <div>jQuery</div>
                         <div>Java</div>
+                        <div>NodeJS</div>
+                        <div>ExpressJS</div>
+                        <div>MongoDB</div>
+                        <div>Tailwind CSS</div>
                     </div>
                 </div>
                 <div className="myproject">
