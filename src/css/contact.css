@@ -5,7 +5,7 @@
   padding: 1.5rem;
   /* border-radius: 5px; */
   /* background-color: var(--secondary-bg-color); */
-  background:linear-gradient(to right, var(--bg-color), var(--bg2-color) );
+  /* background:linear-gradient(to right, var(--bg-color), var(--bg2-color) ); */
   justify-content: center;
   align-items: center;
   min-height:100vh;
@@ -49,10 +49,11 @@
   /* align-items: center; */
   padding: 1.5em 2.5em;
   /* background-color: rgb(226, 183, 252); */
-  background: linear-gradient(to right, var(--bg-color), var(--bg2-color));
+  /* background: linear-gradient(to right, var(--bg-color), var(--bg2-color)); */
   /* height: 420px; */
   height: auto;
   width: 307px;
+  border: 1px solid blue;
   border-radius: 5px;
 }
 .contact textarea {

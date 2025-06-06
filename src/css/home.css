@@ -13,15 +13,20 @@ h1, h2, h3, h4 {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    /* gap: 2em; */
     background:linear-gradient(to right, var(--bg-color), var(--bg2-color) );
     /* position: inherit; */
     /* z-index: 1; */
-    /* padding:0px 10px 10px 10px; */
+    padding:0px 10px 10px 10px;
 }
 /* .home, .introduction, .jcard, .skillContainer, .myproject{
     background: linear-gradient(45deg,red, rgb(247, 9, 155), rgb(231, 155, 215), rgb(88, 5, 88), rgb(44, 44, 219), rgb(32, 195, 201), rgb(0, 255, 55), yellow
     );
 } */
+ .home .sectionTitle{
+    margin-top: 1.5em;
+    text-align: center;
+ }
 .introduction{
     display: flex;
     /* margin: 3rem 3rem; */
@@ -275,7 +280,17 @@ h1, h2, h3, h4 {
     background: transparent;
     
 }
+.home .contactme{
+    flex-direction: column;
+    background-color: inherit;
+}
+.home .contactme .contactContainer{
+    background-color: inherit;
+}
 @media only screen and (max-width:768px){
+    .home{
+        padding:0px 10px 10px 10px;
+    }
     .introduction{
         display: flex;
         flex-direction: column-reverse;
@@ -293,13 +308,15 @@ h1, h2, h3, h4 {
     }
     .introduction #pradeep-profile{
         display: block;
-        margin:0px 8px 15px 0px;
+        margin-left: auto;
+        margin-right:auto;
     }
     .introduction .profile .pradeep-profile{
         display: none;
     }
     .introduction .about #pradeep-profile{
-        max-width:22rem;
+        width:20rem;
+        height:20rem;
         /* position: relative; */
         /* top: 44px; */
         /* z-index: 0; */

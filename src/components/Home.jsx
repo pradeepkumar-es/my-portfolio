@@ -1,7 +1,6 @@
 import React from "react";
 import AboutMe from './AboutMe'
 import Projects from "./Projects";
-import Contact from "./Contact";
 import Footer from "./Footer";
 import Highlights from './Highlights'
 import Certifications from "./Certifications";
@@ -20,15 +19,26 @@ import { IoSchool } from "react-icons/io5";
 import { certificates, myeducation, experience } from './data'
 import { RxSize } from "react-icons/rx";
 import MYJourney from "./MyJourney";
+import Contact from "./Contact";
 import { projects } from "./data";
 import ProjectCard from "./ProjectCard";
 import { GoProjectSymlink } from "react-icons/go";
 import { GrUserExpert } from "react-icons/gr";
-import { MdWorkHistory } from "react-icons/md";
-import { Link } from "react-router-dom";
+import { MdWorkHistory, MdEmail  } from "react-icons/md";
+import { Link, useLocation } from "react-router-dom";
+import {useEffect} from "react"
 // import Navabar from "./Navbar";
 // import MovingElement from "./MovingElement";
 export default function Home() {
+    const locationObject = useLocation(); //react-router hook to access current url(pathname(/ or /about), search(?user123), hash(#about)) and return object with property
+    useEffect(()=>{
+        if(locationObject.hash){
+            document.querySelector(locationObject.hash).scrollIntoView({behavior:"smooth"})
+            //locationObject.hash <=>ex. #about, etc. tageting to element with id as shown in current url hash. 
+            //on targeted element, scrollIntoView() is built in javascript DOM method to jump to the targeted element, if object parameter
+            //is provided like {behaviour:"smooth"}, then it will scroll smoothly to reach targeted element                                                           
+        }
+    }, [locationObject])
     // const maxProjectToShow = 2;
     // const projectToShow = projects.slice(0, maxProjectToShow);
 
@@ -38,7 +48,7 @@ export default function Home() {
     return (
         <>
             <div className="home">
-                <div className="introduction">
+                <div id="about" className="introduction">
                     <div className="about">
                         {/* <h2>Hello,  I'm</h2>
                     <h1> Pradeep</h1> */}
@@ -46,7 +56,7 @@ export default function Home() {
                         <img id="pradeep-profile" src={pradeepProfile} alt="Profile of Pradeep" />
                         <h3 className="name">Pradeep Kumar<div className="shdash"></div></h3>
                         {/* <h1 id="aboutme">Elevating Brands Through Innovative Web Solutions</h1> */}
-                        <p >Pre-final year undergrad at IIT Kanpur (BSBE) with a deep passion for web and software development. I blend clean code with thoughtful design to build responsive, user-friendly experiences. Currently exploring backend dev & DSA. Let’s build something impactful!</p>
+                        <p >Pre-final year undergrad at IIT Kanpur (BSBE) with a deep passion for web and software development. I do code with thoughtful design to build responsive, user-friendly experiences. Currently exploring backend dev & DSA. Let’s build something impactful!</p>
                         {/* <div className="message-me"> */}
 
                         {/* <a href="mailto:pradeepkumariitk22@gmail.com?subject=Contact For &body=Hi Pradeep,%20I"><p>Contact Me</p></a> */}
@@ -69,8 +79,8 @@ export default function Home() {
                 <div className="highlights">
                     <Highlights />
                 </div>
-                <div className="journey">
-                    <h1><MdWorkHistory style={{ width: "2.5rem", height: "2.5rem" }} /> &nbsp;Work Experience</h1>
+                <div id="experience" className="journey">
+                    <h1 className="sectionTitle"><MdWorkHistory style={{ width: "2.5rem", height: "2.5rem" }} /> &nbsp;Work Experience</h1>
                     <div className="journeySection">
                         <div className="path">
                             {/* <MovingElement/> */}
@@ -92,8 +102,8 @@ export default function Home() {
                         </div>
                     </div>
                 </div>
-                <div className="journey">
-                    <h1><IoSchool style={{ width: "2.5rem", height: "2.5rem" }} /> &nbsp;Education</h1>
+                <div id="education" className="journey">
+                    <h1 className="sectionTitle"><IoSchool style={{ width: "2.5rem", height: "2.5rem" }} /> &nbsp;Education</h1>
                     <div className="journeySection">
                         <div className="path">
                             {/* <MovingElement/> */}
@@ -115,8 +125,8 @@ export default function Home() {
                         </div>
                     </div>
                 </div>
-                <div className="skills">
-                    <h1>< GrUserExpert style={{ width: "2.5rem", height: "2.5rem" }} />&nbsp;Skills</h1>
+                <div id="skills" className="skills">
+                    <h1 className="sectionTitle">< GrUserExpert style={{ width: "2.5rem", height: "2.5rem" }} />&nbsp;Skills</h1>
                     <div className="skillContainer">
                         <div>HTML</div>
                         <div>CSS</div>
@@ -135,8 +145,8 @@ export default function Home() {
                         <div>Tailwind CSS</div>
                     </div>
                 </div>
-                <div className="myproject">
-                    <h1><GoProjectSymlink style={{ width: "2.5rem", height: "2.5rem" }} />&nbsp;Projects Prototype</h1>
+                <div id="myproject" className="myproject">
+                    <h1 className="sectionTitle"><GoProjectSymlink style={{ width: "2.5rem", height: "2.5rem" }} />&nbsp;Projects Prototype</h1>
                     <div id="projects" className="myprojects">
 
                         {
@@ -194,6 +204,12 @@ export default function Home() {
                         }
                     </div>
                 </div>  */}
+                <div id="contact" className="contactme">
+                    <h1 className="sectionTitle"><i style={{verticalAlign:"middle"}}><MdEmail style={{ width: "2.6rem", height: "2.6rem" }}/></i>&nbsp;Contact Me</h1>
+                    <div className="contactContainer">
+                        <Contact/>
+                    </div>
+                </div>
             </div>
         </>
     )

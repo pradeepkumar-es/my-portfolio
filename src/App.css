@@ -41,7 +41,7 @@ h1,p,h2,h4{
     color: var(--main-h1-color);
 }
 div{
-    background-color: var(--bg-color);
+    /* background-color: var(--bg-color); */
     /* background: linear-gradient(to bottom right, var(--bg-color) 45%, var(--sub-heading-color) 55%  ); */
 }
 body{
