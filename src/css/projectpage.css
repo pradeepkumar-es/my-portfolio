@@ -6,7 +6,7 @@
     /* background-size: cover; */
     /* background-repeat: repeat-y; */
     min-height: 100vh;
-    background: linear-gradient(to right, var(--bg-color), var(--bg2-color)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    /* background: linear-gradient(to right, var(--bg-color), var(--bg2-color)); W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 .projectpage h1{
     padding-top: 3rem;
@@ -25,12 +25,13 @@
 }
 .projectpage input{
     border: 1px solid #ccc;
+    border-radius: 5px;
     padding: 5px 5px;
-    width: 25%;
+    width: 20rem;
     height: 2rem;
     /* margin-top: 3rem; */
 }
 .projectlist{
     /* background: linear-gradient(to right, #000428, #004e92); W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    background: linear-gradient(to right, var(--bg-color), var(--bg2-color)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    /* background: linear-gradient(to right, var(--bg-color), var(--bg2-color)); W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
