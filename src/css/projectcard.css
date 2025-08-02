@@ -51,6 +51,19 @@ text-align: center;
 height: 26rem;
 width: 36rem;
 }
+.ProjectCard .icons{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    font-size:x-large;
+    padding-top: 20px;
+}
+.ProjectCard .icons a{
+    color: black;
+}
+.ProjectCard .icons a:hover{
+    color:blueviolet;
+}
 @media only screen and (max-width:768px){
     .ProjectCard .project iframe{
         height: 18rem;

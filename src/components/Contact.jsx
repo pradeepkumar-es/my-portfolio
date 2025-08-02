@@ -64,9 +64,9 @@ function Contact() {
     <div className='contact'>
       <div className="contactinfo">
         <h1>Let's Get In Touch</h1>
-        <p> I am open to have any suggestion or just to have a chat </p>
+        {/* <p> I am open to have any suggestion or just to have a chat </p> */}
         <p style={{ fontSize: "x-large" }}>Address:</p>
-        <p><FaLocationDot />&nbsp; Hall 5, IIT Kanpur <br />
+        <p><FaLocationDot />&nbsp; Hall 9, IIT Kanpur, Kanpur <br />
           &nbsp; &nbsp;Uttar Pradesh, India</p>
 
         <p><a style={{ textDecoration: "none" }} href="mailto:pradeepkumariitk22@gmail.com?subject=Contact For&body=Hi Pradeep,"><MdEmail />&nbsp;pradeepkumariitk22@gmail.com</a></p>

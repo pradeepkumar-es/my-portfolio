@@ -10,8 +10,8 @@ function Projects() {
   }
   return (
     <div className="projectpage">
-      <h1>My Projects (Prototype Version)</h1>
-      <p>*UI/UX and Features of all mini projects of this section will be added & updated time to time.</p>
+      {/* <h1>My Projects (Prototype Version)</h1> */}
+      {/* <p>*UI/UX and Features of all mini projects of this section will be added & updated time to time.</p> */}
       <input
         type="text"
         placeholder='Search Project.....'
@@ -39,6 +39,7 @@ function Projects() {
                   prname={data.name}
                   prlink={data.link}
                   prdetail={data.detail}
+                  prgitlink={data.gitLink}
                 />
               </>
             )
