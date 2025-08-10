@@ -29,6 +29,7 @@ export const certificates = [
   {
     cimg: genai,
     name: "Genrative AI Hackathon 1 Certificate",
+    link:"https://www.cloudskillsboost.google/public_profiles/efc8d532-07e1-4c0b-bc17-3448799b2db8"
   },
   {
     cimg: um,
