@@ -21,10 +21,13 @@ import gameRegistration from "../images/game-registration.jpeg";
 import appointment from "../images/appointment.jpeg";
 import imageSlider from "../images/image-slider.jpeg";
 import bagbuddyCover from "../images/online-shopping.jpg";
+import letsDiscussLive from "../images/lets-discuss-live-thumbnail.png"
+import edusangam from "../images/edusangam-logo-nobg.png"
 export const certificates = [
   {
     cimg: gdsc,
     name: "Google Cloud Certificate",
+    link:"https://www.cloudskillsboost.google/public_profiles/efc8d532-07e1-4c0b-bc17-3448799b2db8"
   },
   {
     cimg: genai,
@@ -45,7 +48,7 @@ export const experience = [
   {
     logo: polyformlogo,
     name: "Polyform AI",
-    detail: "Front End Engineering Intern",
+    detail: "Web Devlopment Engineering Intern",
     period: "(August'24-February'25)",
   },
   {
@@ -54,6 +57,12 @@ export const experience = [
     detail: "Web Development Secretary",
     period: "(August'23-May'24)",
   },
+  {
+    logo: edusangam,
+    name: "Edusangam | Scholarship Portal",
+    detail: "Founder & Website Manager",
+    period: "(March'22-March'24)",
+  }
   //, {
   //     logo:umlogo,
   //     name:"UNIFIED MENTOR PRIVATE LIMITED",
@@ -89,6 +98,15 @@ export const myeducation = [
   },
 ];
 export const projects = [
+    {
+    image: letsDiscussLive,
+    gitLink:"https://github.com/pradeepkumar-es/letsDiscussLive",
+    link: "https://letsdiscusslive-2.onrender.com/",
+    tech: "MongoDB | Express | React | NodeJS | Tailwind",
+    name: "Live Discussion Web App",
+    detail:
+      "A full-stack MERN platform for secure, real-time discussions — powered by JWT auth, Socket.IO, and a responsive React + Tailwind UI",
+  },
   {
     image: bagbuddyCover,
     gitLink:"https://github.com/pradeepkumar-es/bagbuddy",

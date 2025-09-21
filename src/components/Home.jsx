@@ -56,7 +56,7 @@ export default function Home() {
                         <img id="pradeep-profile" src={pradeepProfile} alt="Profile of Pradeep" />
                         <h3 className="name">Pradeep Kumar<div className="shdash"></div></h3>
                         {/* <h1 id="aboutme">Elevating Brands Through Innovative Web Solutions</h1> */}
-                        <p >Final year undergrad at IIT Kanpur (BSBE) with a deep passion for web and software development. I do code with thoughtful design to build responsive, user-friendly experiences. Currently exploring backend dev & DSA. Let’s build something impactful!</p>
+                        <p >Final year undergrad at IIT Kanpur with a deep passion for web and software development. I do code with thoughtful design to build responsive, user-friendly experiences. Currently exploring backend dev & DSA. Let’s build something impactful!</p>
                         {/* <div className="message-me"> */}
 
                         {/* <a href="mailto:pradeepkumariitk22@gmail.com?subject=Contact For &body=Hi Pradeep,%20I"><p>Contact Me</p></a> */}
