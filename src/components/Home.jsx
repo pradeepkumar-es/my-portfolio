@@ -134,11 +134,10 @@ export default function Home() {
                         <div>Typescript</div>
                         <div>ReactJS</div>
                         <div>NextJS</div>
-                        <div>Bootstrap</div>
                         <div>Firebase</div>
                         <div>Google Cloud</div>
                         <div>jQuery</div>
-                        <div>Java</div>
+                        {/* <div>Java</div> */}
                         <div>NodeJS</div>
                         <div>ExpressJS</div>
                         <div>MongoDB</div>

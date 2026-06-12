@@ -5,21 +5,21 @@ import polyformlogo from "../images/polyform-logo.png";
 import jnvlogo from "../images/jnv-logo.png";
 import iitklogo from "../images/iitk-logo.png";
 import dakshanalogo from "../images/dakshana-logo.png";
-import umlogo from "../images/um-logo.png";
+// import umlogo from "../images/um-logo.png";
 import docvaultImg from "../images/doc-storage.jpeg";
 import biosociitklogo from "../images/biosociitk-logo.png";
-import toDo from "../images/to-do.jpg";
-import blackJack from "../images/black-jack.jpg";
-import familyCart from "../images/family-cart.jpg";
-import passengerCounter from "../images/passenger-counter.jpg";
-import leadTracker from "../images/lead-tracker.jpg";
-import airbnbLogo from "../images/airbnb-logo.png";
+// import toDo from "../images/to-do.jpg";
+// import blackJack from "../images/black-jack.jpg";
+// import familyCart from "../images/family-cart.jpg";
+// import passengerCounter from "../images/passenger-counter.jpg";
+// import leadTracker from "../images/lead-tracker.jpg";
+// import airbnbLogo from "../images/airbnb-logo.png";
 import memeCover from "../images/meme-cover.png";
 import quizCover from "../images/quiz.png";
 import soulSyncer from "../images/soul-syncer.jpg";
-import gameRegistration from "../images/game-registration.jpeg";
-import appointment from "../images/appointment.jpeg";
-import imageSlider from "../images/image-slider.jpeg";
+// import gameRegistration from "../images/game-registration.jpeg";
+// import appointment from "../images/appointment.jpeg";
+// import imageSlider from "../images/image-slider.jpeg";
 import bagbuddyCover from "../images/online-shopping.jpg";
 import letsDiscussLive from "../images/lets-discuss-live-thumbnail.png"
 import edusangam from "../images/edusangam-logo-nobg.png"
@@ -32,6 +32,7 @@ export const certificates = [
   {
     cimg: genai,
     name: "Genrative AI Hackathon 1 Certificate",
+    link:"https://www.cloudskillsboost.google/public_profiles/efc8d532-07e1-4c0b-bc17-3448799b2db8"
   },
   {
     cimg: um,

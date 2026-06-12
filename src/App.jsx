@@ -7,10 +7,12 @@ import Projects from "./components/Projects";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import React, { Suspense } from "react";
+import {Cursor} from "./components/Cursor";
 const Home = React.lazy(() => import("./components/Home")); //it is recommended to use default export of lazy compoenent
 function App() {
   return (
     <>
+    <Cursor/>
       <BrowserRouter>
         <div className="app">
           <Navbar />
