@@ -21,18 +21,18 @@ import soulSyncer from "../images/soul-syncer.jpg";
 // import appointment from "../images/appointment.jpeg";
 // import imageSlider from "../images/image-slider.jpeg";
 import bagbuddyCover from "../images/online-shopping.jpg";
-import letsDiscussLive from "../images/lets-discuss-live-thumbnail.png"
-import edusangam from "../images/edusangam-logo-nobg.png"
+import letsDiscussLive from "../images/lets-discuss-live-thumbnail.png";
+import edusangam from "../images/edusangam-logo-nobg.png";
 export const certificates = [
   {
     cimg: gdsc,
     name: "Google Cloud Certificate",
-    link:"https://www.cloudskillsboost.google/public_profiles/efc8d532-07e1-4c0b-bc17-3448799b2db8"
+    link: "https://www.cloudskillsboost.google/public_profiles/efc8d532-07e1-4c0b-bc17-3448799b2db8",
   },
   {
     cimg: genai,
     name: "Genrative AI Hackathon 1 Certificate",
-    link:"https://www.cloudskillsboost.google/public_profiles/efc8d532-07e1-4c0b-bc17-3448799b2db8"
+    link: "https://www.cloudskillsboost.google/public_profiles/efc8d532-07e1-4c0b-bc17-3448799b2db8",
   },
   {
     cimg: um,
@@ -63,7 +63,7 @@ export const experience = [
     name: "Edusangam | Scholarship Portal",
     detail: "Founder & Website Manager",
     period: "(March'22-March'24)",
-  }
+  },
   //, {
   //     logo:umlogo,
   //     name:"UNIFIED MENTOR PRIVATE LIMITED",
@@ -99,37 +99,9 @@ export const myeducation = [
   },
 ];
 export const projects = [
-    {
-    image: letsDiscussLive,
-    gitLink:"https://github.com/pradeepkumar-es/letsDiscussLive",
-    link: "https://letsdiscusslive-2.onrender.com/",
-    tech: "MongoDB | Express | React | NodeJS | Tailwind",
-    name: "Live Discussion Web App",
-    detail:
-      "A full-stack MERN platform for secure, real-time discussions — powered by JWT auth, Socket.IO, and a responsive React + Tailwind UI",
-  },
-  {
-    image: bagbuddyCover,
-    gitLink:"https://github.com/pradeepkumar-es/bagbuddy",
-    link: "https://bagbuddy-production.up.railway.app/",
-    tech: "MongoDB | Express | EJS | NodeJS | Tailwind",
-    name: "Full Stack E-commerce website",
-    detail:
-      "Built a complete shopping platform with user authentication, admin product management, cart, and secure Stripe payments. Implemented JWT auth, image uploads, and order flow handling.",
-  },
-  {
-    image: memeCover,
-    gitLink:"https://github.com/pradeepkumar-es/meme-generator",
-    link: "https://design-meme.netlify.app/",
-    tech: "HTML | CSS | Javascript | React.js",
-    name: "Meme Generator",
-    detail:
-      "website allow you to to enter custom meme text, add best possible meme image relating to your text and download your created meme image",
-  },
-
   {
     image: quizCover,
-    gitLink:"https://github.com/pradeepkumar-es/myquizworld",
+    gitLink: "https://github.com/pradeepkumar-es/myquizworld",
     link: "https://myquizworld.netlify.app/",
     tech: "HTML | CSS | Javascript | React | REST API",
     name: "Quiz Website",
@@ -138,7 +110,7 @@ export const projects = [
   },
   {
     image: docvaultImg,
-    gitLink:"https://github.com/pradeepkumar-es/doc-upload",
+    gitLink: "https://github.com/pradeepkumar-es/doc-upload",
     link: "https://government-doc.netlify.app/",
     tech: "HTML | CSS | Javascript | Firebase | React.js ",
     name: "File Storage Web App",
@@ -146,8 +118,35 @@ export const projects = [
       "This website provide fascillity to store your documents digitally online and access from any where ",
   },
   {
+    image: letsDiscussLive,
+    gitLink: "https://github.com/pradeepkumar-es/letsDiscussLive",
+    link: "https://letsdiscusslive-2.onrender.com/",
+    tech: "MongoDB | Express | React | NodeJS | Tailwind",
+    name: "Live Discussion Web App",
+    detail:
+      "A full-stack MERN platform for secure, real-time discussions — powered by JWT auth, Socket.IO, and a responsive React + Tailwind UI",
+  },
+  {
+    image: bagbuddyCover,
+    gitLink: "https://github.com/pradeepkumar-es/bagbuddy",
+    link: "https://bagbuddy-production.up.railway.app/",
+    tech: "MongoDB | Express | EJS | NodeJS | Tailwind",
+    name: "Full Stack E-commerce website",
+    detail:
+      "Built a complete shopping platform with user authentication, admin product management, cart, and secure Stripe payments. Implemented JWT auth, image uploads, and order flow handling.",
+  },
+  {
+    image: memeCover,
+    gitLink: "https://github.com/pradeepkumar-es/meme-generator",
+    link: "https://design-meme.netlify.app/",
+    tech: "HTML | CSS | Javascript | React.js",
+    name: "Meme Generator",
+    detail:
+      "website allow you to to enter custom meme text, add best possible meme image relating to your text and download your created meme image",
+  },
+  {
     image: soulSyncer,
-    gitLink:"https://github.com/pradeepkumar-es/SoulSyncerSocialMedia",
+    gitLink: "https://github.com/pradeepkumar-es/SoulSyncerSocialMedia",
     link: "https://soulsyncer.netlify.app/",
     tech: "HTML | CSS | Javascript | Firebase",
     name: "Soul Syncer",
