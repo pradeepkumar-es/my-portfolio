@@ -1,0 +1,196 @@
+.resume-page {
+  width: min(100%, 1100px);
+  margin: 3rem auto;
+  padding: 2rem 1.5rem 4rem;
+  color: var(--text-color);
+}
+
+.resume-header {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 18px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.15);
+}
+
+.resume-tag {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.08);
+  color: var(--sub-heading-color);
+  text-transform: uppercase;
+  letter-spacing: 0.08rem;
+  font-size: 0.72rem;
+  font-weight: 700;
+}
+
+.resume-header h1 {
+  margin-top: 1rem;
+  font-size: clamp(2rem, 4vw, 3.5rem);
+}
+
+.resume-subtitle {
+  font-size: 1.05rem;
+  margin-top: 0.5rem;
+  opacity: 0.9;
+}
+
+.resume-actions {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+}
+
+.resume-actions a {
+  color: var(--text-color);
+  text-decoration: none;
+  border: 1px solid var(--boundary-color);
+  background: rgba(255, 255, 255, 0.04);
+  padding: 0.7rem 1rem;
+  border-radius: 12px;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.resume-actions a:hover {
+  transform: translateY(-2px);
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.resume-section {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 18px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.resume-section h2 {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  color: var(--sub-heading-color);
+}
+
+.resume-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.resume-skills span {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 999px;
+  padding: 0.5rem 0.9rem;
+  font-size: 0.95rem;
+}
+
+.resume-item,
+.resume-project {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.resume-item:last-child,
+.resume-project:last-child {
+  border-bottom: none;
+}
+
+.resume-item h3,
+.resume-project h3 {
+  margin-bottom: 0.35rem;
+  font-size: 1.1rem;
+}
+
+.resume-item p,
+.resume-project p {
+  margin: 0;
+  opacity: 0.9;
+}
+
+.resume-item span {
+  white-space: nowrap;
+  color: var(--sub-heading-color);
+  font-weight: 600;
+}
+
+.resume-project {
+  display: block;
+}
+
+.resume-project p + p {
+  margin-top: 0.4rem;
+}
+
+.resume-preview {
+  width: 100%;
+  margin-top: 2rem;
+}
+
+.resume-box {
+  width: min(100%, 760px);
+  margin: 1rem auto 0;
+  padding: 1.6rem;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+.resume-box-text h3 {
+  margin-bottom: 0.5rem;
+}
+
+.resume-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-top: 1rem;
+}
+
+.resume-meta span {
+  padding: 0.5rem 0.8rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.resume-actions-home {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  margin-top: 1.4rem;
+}
+
+.resume-actions-home a {
+  text-decoration: none;
+  padding: 0.75rem 1rem;
+  border-radius: 10px;
+  color: var(--text-color);
+  background: var(--button-color);
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.resume-actions-home a:hover {
+  background: var(--button-hover-color);
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .resume-item,
+  .resume-project {
+    flex-direction: column;
+  }
+
+  .resume-header,
+  .resume-section,
+  .resume-box {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}

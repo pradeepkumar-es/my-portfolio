@@ -15,7 +15,7 @@ import biosociitklogo from "../images/biosociitk-logo.png";
 // import leadTracker from "../images/lead-tracker.jpg";
 // import airbnbLogo from "../images/airbnb-logo.png";
 import memeCover from "../images/meme-cover.png";
-import quizCover from "../images/quiz.png";
+import quizCover from "../images/quizApp-cover.png";
 import soulSyncer from "../images/soul-syncer.jpg";
 // import gameRegistration from "../images/game-registration.jpeg";
 // import appointment from "../images/appointment.jpeg";
@@ -77,7 +77,7 @@ export const myeducation = [
     logo: iitklogo,
     name: "Indian Institute of Technology, Kanpur",
     detail: "B.Tech in Biological Sciences and Bioengineering",
-    period: "(2022-Present)",
+    period: "(2022-2026)",
   },
   {
     logo: jnvlogo,
@@ -131,10 +131,10 @@ export const projects = [
     image: quizCover,
     gitLink:"https://github.com/pradeepkumar-es/myquizworld",
     link: "https://myquizworld.netlify.app/",
-    tech: "HTML | CSS | Javascript | React",
+    tech: "HTML | CSS | Javascript | React | REST API",
     name: "Quiz Website",
     detail:
-      "Website let you to select the answer and give the result as score.",
+      "A responsive React-based quiz application featuring dynamic question fetching, timer-based quizzes, score tracking, and performance analytics using the Open Trivia DB API.",
   },
   {
     image: docvaultImg,

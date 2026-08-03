@@ -24,7 +24,7 @@ import { projects } from "./data";
 import ProjectCard from "./ProjectCard";
 import { GoProjectSymlink } from "react-icons/go";
 import { GrUserExpert } from "react-icons/gr";
-import { MdWorkHistory, MdEmail  } from "react-icons/md";
+import { MdWorkHistory, MdEmail, MdDescription  } from "react-icons/md";
 import { Link, useLocation } from "react-router-dom";
 import {useEffect} from "react"
 // import Navabar from "./Navbar";
@@ -56,7 +56,7 @@ export default function Home() {
                         <img id="pradeep-profile" src={pradeepProfile} alt="Profile of Pradeep" />
                         <h3 className="name">Pradeep Kumar<div className="shdash"></div></h3>
                         {/* <h1 id="aboutme">Elevating Brands Through Innovative Web Solutions</h1> */}
-                        <p >Final year undergrad at IIT Kanpur with a deep passion for web and software development. I do code with thoughtful design to build responsive, user-friendly experiences. Currently exploring backend dev & DSA. Let’s build something impactful!</p>
+                        <p >Recent Graduate at IIT Kanpur with a deep passion for web and software development. I do code with thoughtful design to build responsive, user-friendly experiences. Let’s build something impactful!</p>
                         {/* <div className="message-me"> */}
 
                         {/* <a href="mailto:pradeepkumariitk22@gmail.com?subject=Contact For &body=Hi Pradeep,%20I"><p>Contact Me</p></a> */}
@@ -203,6 +203,28 @@ export default function Home() {
                         }
                     </div>
                 </div>  */}
+                <div id="resume" className="resume-preview">
+                    <h1 className="sectionTitle"><MdDescription style={{ width: "2.5rem", height: "2.5rem" }} />&nbsp;Resume</h1>
+                    <div className="resume-box">
+                        <div className="resume-box-text">
+                            <h3>Quick overview</h3>
+                            <p>
+                                Recent graduate from IIT Kanpur with experience in building modern web apps,
+                                responsive interfaces, and full-stack product features.
+                            </p>
+                        </div>
+                        <div className="resume-meta">
+                            <span>Web Development</span>
+                            <span>Full Stack</span>
+                            <span>UI/UX</span>
+                        </div>
+                        <div className="resume-actions-home">
+                            <a href="https://drive.google.com/file/d/1J9zVpu8PvgFsSmLaQ211JrCU-R2sMq0h/view?usp=drive_link" target="_blank" rel="noreferrer">View Resume</a>
+                            <a href="https://drive.google.com/uc?export=download&id=1J9zVpu8PvgFsSmLaQ211JrCU-R2sMq0h" target="_blank" rel="noreferrer">Download Resume</a>
+                            <a href="mailto:pradeepkumariitk22@gmail.com">Contact Me</a>
+                        </div>
+                    </div>
+                </div>
                 <div id="contact" className="contactme">
                     <h1 className="sectionTitle"><i style={{verticalAlign:"middle"}}><MdEmail style={{ width: "2.6rem", height: "2.6rem" }}/></i>&nbsp;Contact Me</h1>
                     <div className="contactContainer">

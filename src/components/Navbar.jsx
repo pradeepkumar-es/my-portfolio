@@ -43,6 +43,7 @@ export default function Navabar() {
                         {/*NavLink only care about pathname not hash part, so if link is /#myproject then it is active and also if likn is at only /, it will show still active to myproject  also. NavLink treat /#myproject as /
                           solution is use: own logic , using useLocation() react-router hook
                         */}
+                        <li><NavLink className={({isActive}) => (isActive ? 'active-link' : '')} to="/resume">Resume</NavLink></li>
                         {/* <li><a href="#projects">My Projects</a></li> */}
                         {/* <li><NavLink className={({isActive})=>(isActive? 'active-link':'')} to="/contact">Contact Me</NavLink></li> */}
                         <li><NavLink className={locationObject.hash ==="#contact"?'active-link':''} to="/#contact">Contact Me</NavLink></li>
@@ -64,6 +65,7 @@ export default function Navabar() {
                              <NavLink to="/#education"><li onClick={togglemenu} className={openMenu?"hideMenuPart":"none"} >Education</li></NavLink> 
                              {/* <a href='#aboutme'><li onClick={togglemenu} className={openMenu?"hideMenuPart":"none"} >About Me</li></a> */}
                             <NavLink to="/#myproject"><li onClick={togglemenu} className={openMenu?"hideMenuPart":"none"}>My Projects</li></NavLink>
+                            <NavLink to="/resume"><li onClick={togglemenu} className={openMenu?"hideMenuPart":"none"}>Resume</li></NavLink>
                             {/* <a href="#projects"><li onClick={togglemenu} className={openMenu?"hideMenuPart":"none"}>My Projects</li></a> */}
                             <NavLink to="/#contact"><li onClick={togglemenu} className={openMenu?"hideMenuPart":"none"}>Contact</li></NavLink>
                         </ul>
