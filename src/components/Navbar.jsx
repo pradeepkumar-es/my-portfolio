@@ -49,27 +49,29 @@ export default function Navabar() {
                         <li><NavLink className={locationObject.hash ==="#contact"?'active-link':''} to="/#contact">Contact Me</NavLink></li>
                     </ul>
                 </div>
-                <div title='Toggle The Mode' className="mode" onClick={changeMode}> {/* Title attribute will show extra information about element tag on hover */}
+                <button type="button" title='Toggle The Mode' className="mode" onClick={changeMode} aria-label="Toggle light and dark mode"> {/* Title attribute will show extra information about element tag on hover */}
                     {mode?<MdOutlineLightMode className='lightMode' />:<MdOutlineDarkMode className='darkMode' />}
-                </div>
+                </button>
                 
                 <div className="mobile-menu">
-                    <GiHamburgerMenu onClick={togglemenu} className={openMenu ? 'hamburgerMenu' : 'deactivate-hamburgerMenu'} />
-                    <div className={openMenu?"none":"showMenuPart"}>
-                        <div className="cross"><RxCross1 onClick={togglemenu} className={openMenu ? 'activate-cross' : 'crossStyle'} /></div>
-                        <ul className={openMenu ? 'activate-mobileNavbar' : 'mobileMenuStyle'}>
-                             <NavLink to="/"><li onClick={togglemenu} className={openMenu?"hideMenuPart":"none"} >Home</li></NavLink>                     
-                             <NavLink to="/#about"><li onClick={togglemenu} className={openMenu?"hideMenuPart":"none"} >About</li></NavLink>  
-                             <NavLink to="/#skills"><li onClick={togglemenu} className={openMenu?"hideMenuPart":"none"} >Skills</li></NavLink> 
-                             <NavLink to="/#experience"><li onClick={togglemenu} className={openMenu?"hideMenuPart":"none"} >Experience</li></NavLink> 
-                             <NavLink to="/#education"><li onClick={togglemenu} className={openMenu?"hideMenuPart":"none"} >Education</li></NavLink> 
-                             {/* <a href='#aboutme'><li onClick={togglemenu} className={openMenu?"hideMenuPart":"none"} >About Me</li></a> */}
-                            <NavLink to="/#myproject"><li onClick={togglemenu} className={openMenu?"hideMenuPart":"none"}>My Projects</li></NavLink>
-                            <NavLink to="/#resume"><li onClick={togglemenu} className={openMenu?"hideMenuPart":"none"}>Resume</li></NavLink>
-                            {/* <a href="#projects"><li onClick={togglemenu} className={openMenu?"hideMenuPart":"none"}>My Projects</li></a> */}
-                            <NavLink to="/#contact"><li onClick={togglemenu} className={openMenu?"hideMenuPart":"none"}>Contact</li></NavLink>
-                        </ul>
-                    </div>
+                    <button type="button" className={openMenu ? 'hamburgerMenu' : 'deactivate-hamburgerMenu'} onClick={togglemenu} aria-label="Open navigation menu">
+                        <GiHamburgerMenu />
+                    </button>
+                    {!openMenu && <div className="showMenuPart">
+                        <div className="mobileMenuPanel">
+                            <button type="button" className="cross" onClick={togglemenu} aria-label="Close navigation menu"><RxCross1 /></button>
+                            <ul className="mobileMenuStyle">
+                                <li><NavLink onClick={togglemenu} to="/">Home</NavLink></li>
+                                <li><NavLink onClick={togglemenu} to="/#about">About</NavLink></li>
+                                <li><NavLink onClick={togglemenu} to="/#skills">Skills</NavLink></li>
+                                <li><NavLink onClick={togglemenu} to="/#experience">Experience</NavLink></li>
+                                <li><NavLink onClick={togglemenu} to="/#education">Education</NavLink></li>
+                                <li><NavLink onClick={togglemenu} to="/#myproject">My Projects</NavLink></li>
+                                <li><NavLink onClick={togglemenu} to="/#resume">Resume</NavLink></li>
+                                <li><NavLink onClick={togglemenu} to="/#contact">Contact</NavLink></li>
+                            </ul>
+                        </div>
+                    </div>}
                 </div>
             </div>
         </>

@@ -1,193 +1,220 @@
-/* :root{
-  --background-color:white;
-  --text-color:black;
-}
-.mode{
-  --background-color: var(--text-color);
-  --text-color:var(--background-color);
-}
-body {
-  background-color: var(--background-color);
-  color: var(--text-color);
-} */
 .nav {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
   position: sticky;
-  /* margin: auto; */
-  top: 0px;
+  top: 0;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   width: 100%;
-  padding: 0;
-  margin: 0;
-  background:linear-gradient(to right, var(--bg-color), var(--bg2-color) );
-  /* border-bottom: .001rem solid var(--sub-heading-color); */
-  /* padding-top: 10px; */
-  /* padding-bottom: 0px; */
-  /* padding:0px 0px 0px 0px; */
-  /* box-shadow: 1px 0px 15px var(--sub-heading-color); */
+  padding: 1rem clamp(1.2rem, 2vw, 2rem);
+  background: var(--panel-alt);
+  backdrop-filter: blur(14px);
+  border-bottom: 1px solid var(--boundary-color);
+  box-shadow: 0 10px 25px rgba(15, 23, 42, 0.08);
 }
 
-/* Change this to whatever you want for the active link */
-.active-link{
-  font-weight: bold;
-  border-bottom: 2px solid var(--sub-heading-color);
-}
-.nav .menu-link{
-  background: transparent;
-}
-.nav .menu-link ul{
-  display: flex;
-  flex-direction: row;
-  list-style: none;
-  cursor: pointer;
-  justify-content: space-evenly;
-  gap: 1rem;
-  color:var(--icon-color);
-  padding-top: 10px;
-  font-size: larger;
-}
-.nav .menu-link ul{
-  justify-content: center;
-  align-items: center;
-}
-/* .nav .menu-link .home{
-  color: white;
-} */
-.nav .lightMode, .nav .darkMode{
-  color:var(--icon-color);
-  height: 35px;
-  width: 35px;
-  padding-top: 5px;
-  cursor: pointer;
-}
-/* .lightMode, .darkMode{
-  color: white;
-} */
-.nav .menu-link a{
-  text-decoration: none;
-  color: var(--icon-color);
-}
-.nav .menu-link .home{
-  background: transparent;
-}
 .nav .logo {
-  padding-top: 1px;
-  color: rgb(224, 244, 247);
-  font-family: Georgia, "Times New Roman", Times, serif;
-  font-variant: small-caps; /*to convert all letter in upper case, here converted letter size will be smaller than that of original uppercase letter*/
-  padding-top: 5px;
-  padding-left: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.35rem 0;
   background: transparent;
 }
-.nav .logo h2 span {
-  font-size: 150%;
-  margin-right: 0px;
+
+.nav .logo h2 {
+  font-size: clamp(1.05rem, 1.4vw, 1.5rem);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--main-h1-color);
+  font-weight: 600;
+}
+
+.nav .menu-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+}
+
+.nav .menu-link ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.4rem;
+  list-style: none;
+}
+
+.nav .menu-link a {
+  position: relative;
   color: var(--text-color);
-  /* padding-bottom: 5px; */
+  font-size: 0.96rem;
+  font-weight: 500;
+  padding: 0.45rem 0.1rem;
+  transition: color 0.2s ease;
 }
-.mode{
-  background: transparent;
+
+.nav .menu-link a:hover,
+.nav .menu-link a.active-link {
+  color: var(--sub-heading-color);
 }
+
+.nav .menu-link a.active-link::after,
+.nav .menu-link a:hover::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -0.25rem;
+  width: 100%;
+  height: 2px;
+  background: var(--sub-heading-color);
+  border-radius: 999px;
+}
+
+.nav .lightMode,
+.nav .darkMode {
+  color: var(--icon-color);
+  width: 1.8rem;
+  height: 1.8rem;
+  cursor: pointer;
+}
+
+.mode {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.35rem;
+  border: 1px solid var(--boundary-color);
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.02);
+  line-height: 0;
+}
+
 .nav .mobile-menu {
-  background: transparent;
   display: none;
 }
-.nav .mobile-menu .activate-cross,
-.nav .mobile-menu .activate-mobileNavbar {
-  display: none;
-}
+
 @media only screen and (max-width: 768px) {
-  .menu-link {
+  .nav .menu-link {
     display: none;
   }
-  .nav .mobile-menu {
-    display: block;
-    color: white;
-    font-size: xxx-large;
-  }
+
   .nav {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto auto;
+    column-gap: 0.65rem;
+    justify-content: initial;
+    padding: 0.9rem 1rem;
   }
+
+  .nav .logo {
+    justify-content: flex-start;
+    min-width: 0;
+  }
+
+  .nav .logo h2 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .nav .mode {
+    width: 2.35rem;
+    height: 2.35rem;
+    padding: 0.25rem;
+  }
+
+  .nav .mode .lightMode,
+  .nav .mode .darkMode {
+    width: 1.45rem;
+    height: 1.45rem;
+  }
+
+  .nav .mobile-menu {
+    display: flex;
+    width: 2.35rem;
+    height: 2.35rem;
+    align-items: center;
+    justify-content: center;
+    color: var(--icon-color);
+    font-size: 1.8rem;
+  }
+
+  .nav .mobile-menu button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    color: inherit;
+    cursor: pointer;
+  }
+
   .nav .mobile-menu .deactivate-hamburgerMenu {
     display: none;
-    /* color: var(--icon-color); */
   }
+
   .nav .mobile-menu .hamburgerMenu {
     color: var(--icon-color);
   }
+
+  .nav .mobile-menu .mobileMenuPanel {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: min(82vw, 320px);
+    height: 100vh;
+    background: var(--panel-alt);
+    backdrop-filter: blur(16px);
+    padding: 4rem 1.2rem 1.2rem;
+    border-left: 1px solid var(--boundary-color);
+    box-shadow: -18px 0 30px rgba(15, 23, 42, 0.12);
+    z-index: 26;
+  }
+
   .nav .mobile-menu .cross {
-    /* background-color: rgb(255, 255, 255); */
-    /* text-align:right; */
-    /* align-items: end; */
-    /* margin: 0px; */
-    /* padding:0px 0px 0px 16px; */
-    /* border: 1px solid black; */
-    
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    color: var(--main-h1-color);
+    background: transparent;
   }
-  .nav .mobile-menu .crossStyle {
-    /* background-color: white; */
-    color: black;
-    /* padding-top: 5px ; */
-    padding-bottom: 3px;
-    margin-top: 0px;
-    /* margin-bottom: 5px; */
-    /* margin-bottom: 10rem; */
-    position: fixed;
-    top: -1px;
-    width: 227px;
-    /* height: 100%; */
-    transition: left 0.5s ease;
+
+  .nav .mobile-menu .cross svg {
+    width: 2rem;
+    height: 2rem;
   }
+
   .nav .mobile-menu .mobileMenuStyle {
-    margin-top: 2rem;
-    background-color: white;
-    padding-top: 1rem;
-    /* position: fixed;
-    top: 1;
-    right: -25%;
-    width: 90%;
-    height: 100%;
-    transition: left 0.5s ease; */
+    padding: 0;
   }
+
   .nav .mobile-menu .mobileMenuStyle li {
-    font-size: 1.5rem;
-    padding: 0.8rem 2rem 0rem 0rem;
-    background-color: rgb(252, 254, 255);
-    color: rgb(0, 0, 0);
-    width: 15rem;
-    text-align: center;
-    font-family: "Times New Roman", Times, serif;
-    /* border-width: 0px; */
     list-style: none;
+    width: 100%;
+    padding: 0.9rem 0.8rem;
+    margin-bottom: 0.5rem;
+    border-radius: 12px;
+    background: var(--panel-color);
+    border: 1px solid var(--boundary-color);
+    font-size: 1rem;
+    text-align: left;
   }
-  .nav .showMenuPart{
-    margin-top: 0rem;
-    background-color: white;
+
+  .nav .mobile-menu .mobileMenuStyle a {
+    display: block;
+    color: var(--main-h1-color);
+  }
+
+  .nav .showMenuPart {
     position: fixed;
-    top: 1;
-    right: -25%;
-    width: 90%;
-    height: 100%;
-    transition: left 0.5s ease;
+    inset: 0;
+    background: rgba(2, 6, 23, 0.4);
+    z-index: 25;
   }
-  .nav .hideMenuPart{
-    display: none;
-  }
-  /* For Link use a for styling because here Link is used instead of a */
-  .mobileMenuStyle a {
-    background-color: white;
+
+  .nav .mobileMenuStyle a {
     text-decoration: none;
-    /* text-align: center; */
-    /* padding: 0px; */
   }
-  /* link{
-    background-color: white;
-  } */
-  /* .nav .menu-link .home{
-    color: white;
-  } */
 }
-@media only screen and (min-width: 768px) {
-}
+

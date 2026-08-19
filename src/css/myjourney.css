@@ -1,14 +1,22 @@
 .MyJourney {
     display: flex;
     flex-direction: row;
-    /* justify-content: center; */
-    /* align-items: flex-start; */
-    margin: auto;
+    align-items: flex-start;
+  width: fit-content;
+  max-width: 100%;
+    margin: 0;
     padding: 1rem .1rem;
-    /* text-align:left; */
 }
 .jdetail, .jlogo {
   padding-left: 1rem;
+}
+
+.jlogo {
+  flex: 0 0 5rem;
+}
+
+.jdetail {
+  min-width: 0;
 }
 .jdetail h4, 
 .jdetail p {
